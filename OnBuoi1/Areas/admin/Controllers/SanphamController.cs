@@ -7,23 +7,19 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace OnBuoi1.Areas.admin.Controllers
 {
-    public class Loprieng
-    {
-        public int ID { set; get; }
-        public string Name { set; get; }
-    }
+    
     [Area("admin")]
     public class SanphamController : Controller
     {
         public IActionResult Index()
         {
-            List<Loprieng> pagesize = new List<Loprieng>();
-            pagesize.Add(new Loprieng { ID = 7 });
-            pagesize.Add(new Loprieng { ID = 10 });
-            pagesize.Add(new Loprieng { ID = 20 });
-            pagesize.Add(new Loprieng { ID = 30 });
-            pagesize.Add(new Loprieng { ID = 40 });
-            pagesize.Add(new Loprieng { ID = 50 });
+            List<Lopchung> pagesize = new List<Lopchung>();
+            pagesize.Add(new Lopchung { ID = 7 });
+            pagesize.Add(new Lopchung { ID = 10 });
+            pagesize.Add(new Lopchung { ID = 20 });
+            pagesize.Add(new Lopchung { ID = 30 });
+            pagesize.Add(new Lopchung { ID = 40 });
+            pagesize.Add(new Lopchung { ID = 50 });
             ViewBag.Pagesize = pagesize;
             return View();
         }
