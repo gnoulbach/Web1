@@ -1,0 +1,341 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/admin/Views/share/_Layout.cshtml";
+}
+
+@*them nhan vien*@
+<div class="modal fade" id="new" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>THÊM NHÂN VIÊN</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Họ tên nhân viên
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tuổi
+                                                </span>
+                                            </div>
+                                            <input type="number" class="form-control bg-white" id="age" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Địa chỉ
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="address" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="button" id="create" class="btn btn-primary" data-bs-dismiss="modal">Thêm mới</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Sua nhan vien *@
+<div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>CHỈNH SỬA NHÂN VIÊN</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Họ tên nhân viên
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="edit_name" />
+                                            <input type="text" hidden id="edit_id" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tuổi
+                                                </span>
+                                            </div>
+                                            <input type="number" class="form-control bg-white" id="edit_age" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Địa chỉ
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="edit_address" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button type="button" id="save" class="btn btn-primary" data-bs-dismiss="modal">Chỉnh sửa</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*hien thi thong tin nhan vien*@
+<div class="card">
+    <div class="card-header">
+        <h4>THÔNG TIN USER</h4>
+    </div>
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new">
+                    Thêm mới
+                </button>
+            </div>
+            <div class="col-md-3">
+                <span>Số dòng/trang</span>
+            </div>
+            <div class="col-md-2">
+                @Html.DropDownList("Pagesize", new SelectList(ViewBag.Pagesize, "ID", "ID"), new { @class = "form-control" })
+            </div>
+            <div class="col-md-3">
+                <div class="dropdown" style="float:right">
+                    <select class="form-select" aria-label="Default select example" id="status">
+                        <option selected value="1">Trang thai nhan vien</option>
+                        <option value="1">Dang lam</option>
+                        <option value="0">Da nghi</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Họ tên 
+                    </th>
+                    <th>
+                        Tuổi
+                    </th>
+                    <th>
+                        Địa chỉ
+                    </th>
+                 
+                    <th> </th>
+                </tr>
+            </thead>
+
+            <tbody id="tbData"></tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="100" id="pages">
+
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+
+
+        var nhanvien = {
+            init: function () {
+                nhanvien.search(1);
+                $("#search").change(function () {
+                    nhanvien.search(1);
+                });
+                $("#Pagesize").change(function () {
+                    nhanvien.search(1);
+                });
+                
+                $("#create").click(function () {
+                    nhanvien.create();
+                });
+                $('#update').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget)
+                    var idhd = button.data('whatever')
+
+                    nhanvien.getNhanvien(idhd);
+
+                });
+                $("#save").click(function () {
+                    nhanvien.save();
+                    nhanvien.search(1);
+                });
+
+            },
+            delete: function (id) {
+                if (confirm("Bạn có muốn xóa hay không?")) {
+                    //Hanfh ddoonjg gọi action xóa
+                    $.ajax({
+                        type: 'get',
+                        dataType: 'JSON',
+                        url: '/Admin/User/Delete/' + id,
+                        success: function (res) {
+                            alert(res.mess);
+                            nhanvien.search(1);
+                        }
+                    });
+                }
+            },
+            getNhanvien: function (id) {
+
+
+                $.ajax({
+                    type: 'get',
+                    dataType: 'JSON',
+                    url: '/Admin/User/getNhanVien/' + id,
+                    success: function (res) {
+                        $("#edit_id").val(res.data.id);
+                        $("#edit_name").val(res.data.name);
+                        $("#edit_age").val(res.data.age);
+                        $("#edit_address").val(res.data.address);
+                        
+
+                    }
+                });
+            },
+            search: function (index) {
+                var name = $("#search").val();
+                var size = $("#Pagesize").val();
+                var form = new FormData()
+                form.append("name", name);
+                form.append("size", size);
+                form.append("index", index);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/admin/User/ShowList/',
+                    success: function (res) {
+                        $("#tbData").html(res.data);
+                        $("#pages").html(res.page);
+                    },
+                });
+            },
+            create: function () {
+                var name = $("#name").val();
+                var age = $("#age").val();
+                var address = $("#address").val();
+                
+
+                var form = new FormData()
+                form.append("name", name);
+                form.append("age", age);
+                form.append("address", address);
+               
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/Admin/User/Create/',
+                    success: function (res) {
+
+                        _layout.showtoast(res.mess);
+                    },
+                });
+            },
+            save: function () {
+                var id = $("#edit_id").val();
+                var name = $("#edit_name").val();
+                var age = $("#edit_age").val();
+                var address = $("#edit_address").val();
+                var form = new FormData()
+                form.append("id", id);
+                form.append("name", name);
+                form.append("age", age);
+                form.append("address", address);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/Admin/User/Update/',
+                    success: function (res) {
+
+                        _layout.showtoast(res.mess);
+                    },
+                });
+            },
+
+        }
+        nhanvien.init();
+        function goto(i) {
+            nhanvien.search(i);
+        }
+    </script>
+}
+
