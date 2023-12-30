@@ -1,0 +1,456 @@
+﻿
+@{
+    ViewData["Title"] = "Indexp";
+    Layout = "~/Areas/admin/Views/share/_Layout.cshtml";
+}
+
+@*them san pham*@
+<div class="modal fade" id="new" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>THÊM Khách Hàng</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tên Khách Hàng
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tuổi
+                                                </span>
+                                            </div>
+                                            <input type="number" class="form-control bg-white" id="age" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Số Điện Thoại
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="phone" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Địa Chỉ
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="address" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tài Khoản
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="username" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Mật Khẩu
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="password" />
+                                        </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Hình Ảnh
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="button" id="create" class="btn btn-primary" data-bs-dismiss="modal">Thêm mới</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Sua san pham *@
+<div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>CHỈNH SỬA SẢN PHẨM</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tên sản phẩm
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" id="edit_name" />
+                                            <input type="text" hidden id="edit_idc" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Tuổi
+                                                </span>
+                                            </div>
+                                            <input type="number" class="form-control bg-white" id="edit_age" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-1">
+                                          <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                  <span class="input-group-text">
+                                                      Phone
+                                                  </span>
+                                              </div>
+                                              <input type="text" class="form-control" id="edit_phone" />
+                                          </div>
+                                    </div>
+                                        <div class="col-md-12 p-1">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        Địa chỉ
+                                                    </span>
+                                                </div>
+                                                <input type="text" class="form-control" id="edit_address" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 p-1">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        Tài Khoản
+                                                    </span>
+                                                </div>
+                                                <input type="text" class="form-control" id="edit_username" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 p-1">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        Mật Khẩu
+                                                    </span>
+                                                </div>
+                                                <input type="text" class="form-control" id="edit_password" />
+                                            </div>
+                                        </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Hình Ảnh
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="edit_image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button type="button" id="save" class="btn btn-primary" data-bs-dismiss="modal">Chỉnh sửa</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*hien thi thong tin san pham*@
+<div class="card">
+    <div class="card-header">
+        <h4>THÔNG TIN SẢN PHẨM</h4>
+    </div>
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new">
+                    Thêm mới
+                </button>
+            </div>
+            <div class="col-md-3">
+                <span>Số dòng/trang</span>
+            </div>
+            <div class="col-md-2">
+                @Html.DropDownList("Pagesize", new SelectList(ViewBag.Pagesize, "ID", "ID"), new { @class = "form-control" })
+            </div>
+            <div class="col-md-3">
+                <div class="dropdown" style="float:right">
+                    <select class="form-select" aria-label="Default select example" id="status">
+                        <option selected value="1">Trang thai khach hang</option>
+                        <option value="1">Dang onl/option>
+                        <option value="0">Da off</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Tên Khách Hàng
+                    </th>
+                    <th>
+                        Tuổi
+                    </th>
+                    <th>
+                       Số Điện Thoại
+                    </th>
+                    <th>
+                        Địa Chỉ
+                    </th>
+                    <th>
+                        Tài Khoản
+                    </th>
+                    <th>
+                        Mật Khẩu
+                     </th>
+                    <th>
+                        Hình Ảnh
+                    </th>
+                    
+                 
+                    <th> </th>
+                </tr>
+            </thead>
+
+            <tbody id="tbData"></tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="100" id="pages">
+
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+
+
+        var khachhang = {
+            init: function () {
+                    khachhang.search(1);
+                $("#search").change(function () {
+                        khachhang.search(1);
+                });
+                $("#Pagesize").change(function () {
+                        khachhang.search(1);
+                });
+                
+                $("#create").click(function () {
+                        khachhang.create();
+                });
+                $('#update').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget)
+                    var idhd = button.data('whatever')
+
+                        khachhang.getkhachhang(idhd);
+
+                });
+               
+                $("#save").click(function () {
+                        khachhang.save();
+                        khachhang.search(1);
+                });
+
+            },
+            delete:function(id){
+                   if(confirm("Bạn có muốn xóa hay không?")){
+                       //Hanfh ddoonjg gọi action xóa
+                    $.ajax({
+                        type: 'get',
+                        dataType: 'JSON',
+                        url: '/Admin/Khachhang/Delete/' + id,
+                        success: function (res) {
+                           alert(res.mess);
+                                khachhang.search(1);
+                        }
+                    });
+                   }
+               },
+            getKhachhang: function (id) {
+
+
+                $.ajax({
+                    type: 'get',
+                    dataType: 'JSON',
+                        url: '/Admin/Khachhang/getKhachHang/' + id,
+                    success: function (res) {
+                        $("#edit_idc").val(res.data.idc);
+                        $("#edit_name").val(res.data.name);
+                        $("#edit_age").val(res.data.age);
+                        $("#edit_phone").val(res.data.phone);
+                        $("#edit_address").val(res.data.address);
+                        $("#edit_username").val(res.data.username);
+                        $("#edit_password").val(res.data.password);
+               
+                    }
+                });
+            },
+            search: function (index) {
+                var name = $("#search").val();
+                var size = $("#Pagesize").val();
+                var form = new FormData()
+                form.append("name", name);
+                form.append("size", size);
+                form.append("index", index);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/admin/Khachhang/ShowList/',
+                    success: function (res) {
+                        $("#tbData").html(res.data);
+                        $("#pages").html(res.page);
+                    },
+                });
+            },
+            create: function () {
+                var name = $("#name").val();
+                var price = $("#age").val();
+                var price = $("#phone").val();
+                var price = $("#address").val();
+                var price = $("#username").val();
+                var price = $("#pasword").val();
+                var image = $("#image").val();
+                
+
+                var form = new FormData()
+                form.append("name", name);
+                form.append("age", age);
+                form.append("phone", phone);
+                form.append("address", address);
+                form.append("username", username);
+                form.append("password", password);
+                form.append("image", image);
+               
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/Admin/Khachhang/Create/',
+                    success: function (res) {
+
+                        _layout.showtoast(res.mess);
+                    },
+                });
+            },
+            save: function () {
+            var idp = $("#edit_idc").val();
+            var name = $("#edit_name").val();
+            var price = $("#edit_age").val();
+            var price = $("#edit_phone").val();
+            var price = $("#edit_address").val();
+            var price = $("#edit_username").val();
+            var price = $("#edit_pasword").val();
+            var image = $("#edit_image").val();
+
+            var form = new FormData()
+            form.append("idc", idc);
+            form.append("name", name);
+            form.append("age", age);
+            form.append("phone", phone);
+            form.append("address", address);
+            form.append("username", username);
+            form.append("password", password);
+            form.append("image", image);
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/Admin/Khachhang/Update/',
+                    success: function (res) {
+
+                        _layout.showtoast(res.mess);
+                    },
+                });
+            },
+
+           
+            
+        }
+        khachhang.init();
+        function goto(i) {
+            khachhang.search(i);
+        }
+    </script>
+}
+

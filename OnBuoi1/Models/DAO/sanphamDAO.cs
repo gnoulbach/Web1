@@ -76,5 +76,10 @@ namespace OnBuoi1.Models.DAO
             context.Sanphams.Remove(x);
             context.SaveChanges();
         }
+
+        internal object search(string name, out int total, int index, int size)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace OnBuoi1.Models.EF
         {
         }
 
+        public virtual DbSet<Khachhang> Khachhangs { get; set; } = null!;
         public virtual DbSet<Sanpham> Sanphams { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
@@ -30,6 +31,43 @@ namespace OnBuoi1.Models.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Khachhang>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("Khachhang");
+
+                entity.Property(e => e.Address)
+                    .HasMaxLength(255)
+                    .HasColumnName("address");
+
+                entity.Property(e => e.Age).HasColumnName("age");
+
+                entity.Property(e => e.Idc)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("idc");
+
+                entity.Property(e => e.Image)
+                    .HasMaxLength(255)
+                    .HasColumnName("image");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(255)
+                    .HasColumnName("name");
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(255)
+                    .HasColumnName("password");
+
+                entity.Property(e => e.Phone)
+                    .HasMaxLength(255)
+                    .HasColumnName("phone");
+
+                entity.Property(e => e.Username)
+                    .HasMaxLength(255)
+                    .HasColumnName("username");
+            });
+
             modelBuilder.Entity<Sanpham>(entity =>
             {
                 entity.HasKey(e => e.Idp)

@@ -7,7 +7,6 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace OnBuoi1.Areas.admin.Controllers
 {
-    
     [Area("admin")]
     public class SanphamController : Controller
     {
