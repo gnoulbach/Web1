@@ -13,10 +13,5 @@ namespace OnBuoi1.Models.EF
         public string? Username { get; set; }
         public string? Password { get; set; }
         public string? Image { get; set; }
-
-        internal static void InsertOrUpdate(Khachhang item)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

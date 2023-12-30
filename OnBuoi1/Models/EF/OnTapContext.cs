@@ -33,19 +33,17 @@ namespace OnBuoi1.Models.EF
         {
             modelBuilder.Entity<Khachhang>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Idc);
 
                 entity.ToTable("Khachhang");
+
+                entity.Property(e => e.Idc).HasColumnName("idc");
 
                 entity.Property(e => e.Address)
                     .HasMaxLength(255)
                     .HasColumnName("address");
 
                 entity.Property(e => e.Age).HasColumnName("age");
-
-                entity.Property(e => e.Idc)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("idc");
 
                 entity.Property(e => e.Image)
                     .HasMaxLength(255)

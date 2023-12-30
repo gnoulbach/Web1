@@ -49,9 +49,10 @@ namespace OnBuoi1.Areas.admin.Controllers
             item.Username = username;
             item.Password = password;
             item.Image = image;
-            Khachhang.InsertOrUpdate(item);
+            khachhang.InsertOrUpdate(item);
             return Json(new { mess = "Chinh sua khach hang thanh cong" });
         }
+        [HttpPost]
         public JsonResult ShowList(string name = "", int index = 1, int size = 7)
         {
 

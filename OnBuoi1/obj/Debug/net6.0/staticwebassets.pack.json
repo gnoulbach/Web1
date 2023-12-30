@@ -9,6 +9,490 @@
       "PackagePath": "staticwebassets\\Assets.zip"
     },
     {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\bootstrap\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\bootstrap\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\bootstrap\\mixins\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\bootstrap\\mixins\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\bootstrap\\mixins\\_breakpoints.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\bootstrap\\mixins\\_breakpoints.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\bootstrap\\mixins\\_transition.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\bootstrap\\mixins\\_transition.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\cssnavbar.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\cssnavbar.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\style.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\css\\_ionicons.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\css\\_ionicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\fonts\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\fonts\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Client\\fonts\\ionicons\\fonts\\ionicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\images\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\jsnavbar.js",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\jsnavbar.js"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\main.js",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\js\\popper.min.js.map",
+      "PackagePath": "staticwebassets\\Assets\\Client\\js\\popper.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\.DS_Store",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\Assets\\Client\\scss\\style.scss"
+    },
+    {
       "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Home\\css\\style.css",
       "PackagePath": "staticwebassets\\Assets\\Home\\css\\style.css"
     },
@@ -9151,490 +9635,6 @@
     {
       "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\User\\js\\shop.js",
       "PackagePath": "staticwebassets\\Assets\\User\\js\\shop.js"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\css\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\Client\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\bootstrap\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\css\\bootstrap\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\bootstrap\\mixins\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\css\\bootstrap\\mixins\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\bootstrap\\mixins\\_breakpoints.css",
-      "PackagePath": "staticwebassets\\Client\\css\\bootstrap\\mixins\\_breakpoints.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\bootstrap\\mixins\\_transition.css",
-      "PackagePath": "staticwebassets\\Client\\css\\bootstrap\\mixins\\_transition.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\bootstrap\\mixins\\_visibility.css",
-      "PackagePath": "staticwebassets\\Client\\css\\bootstrap\\mixins\\_visibility.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\cssnavbar.css",
-      "PackagePath": "staticwebassets\\Client\\css\\cssnavbar.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\ionicons.min.css",
-      "PackagePath": "staticwebassets\\Client\\css\\ionicons.min.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\css\\style.css",
-      "PackagePath": "staticwebassets\\Client\\css\\style.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\fonts\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\css\\_ionicons.scss",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\css\\_ionicons.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\css\\ionicons.min.css",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\css\\ionicons.min.css"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\fonts\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\fonts\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\fonts\\ionicons.eot",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\fonts\\ionicons.eot"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\fonts\\ionicons.svg",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\fonts\\ionicons.svg"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\fonts\\ionicons.ttf",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\fonts\\ionicons.ttf"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\fonts\\ionicons.woff",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\fonts\\ionicons.woff"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\fonts\\ionicons\\fonts\\ionicons.woff2",
-      "PackagePath": "staticwebassets\\Client\\fonts\\ionicons\\fonts\\ionicons.woff2"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\images\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\images\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\js\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\Client\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\Client\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\jquery.min.js",
-      "PackagePath": "staticwebassets\\Client\\js\\jquery.min.js"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\jsnavbar.js",
-      "PackagePath": "staticwebassets\\Client\\js\\jsnavbar.js"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\main.js",
-      "PackagePath": "staticwebassets\\Client\\js\\main.js"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\popper.js",
-      "PackagePath": "staticwebassets\\Client\\js\\popper.js"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\js\\popper.min.js.map",
-      "PackagePath": "staticwebassets\\Client\\js\\popper.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\scss\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\.DS_Store",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_alert.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_alert.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_badge.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_badge.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_breadcrumb.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_breadcrumb.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_button-group.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_button-group.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_buttons.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_buttons.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_card.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_card.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_carousel.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_carousel.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_close.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_close.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_code.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_code.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_custom-forms.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_custom-forms.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_dropdown.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_dropdown.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_forms.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_forms.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_functions.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_functions.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_grid.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_grid.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_images.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_images.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_input-group.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_input-group.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_jumbotron.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_jumbotron.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_list-group.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_list-group.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_media.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_media.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_mixins.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_mixins.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_modal.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_modal.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_nav.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_nav.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_navbar.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_navbar.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_pagination.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_pagination.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_popover.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_popover.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_print.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_print.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_progress.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_progress.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_reboot.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_reboot.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_root.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_root.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_spinners.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_spinners.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_tables.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_tables.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_toasts.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_toasts.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_tooltip.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_tooltip.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_transitions.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_transitions.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_type.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_type.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_utilities.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_utilities.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\_variables.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\_variables.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\bootstrap-grid.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\bootstrap-grid.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\bootstrap-reboot.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\bootstrap-reboot.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\bootstrap.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\bootstrap.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_alert.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_alert.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_background-variant.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_background-variant.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_badge.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_badge.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_border-radius.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_border-radius.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_box-shadow.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_box-shadow.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_breakpoints.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_breakpoints.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_buttons.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_buttons.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_caret.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_caret.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_clearfix.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_clearfix.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_deprecate.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_deprecate.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_float.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_float.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_forms.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_forms.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_gradients.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_gradients.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_grid-framework.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_grid-framework.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_grid.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_grid.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_hover.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_hover.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_image.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_image.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_list-group.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_list-group.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_lists.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_lists.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_nav-divider.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_nav-divider.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_pagination.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_pagination.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_reset-text.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_reset-text.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_resize.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_resize.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_screen-reader.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_screen-reader.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_size.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_size.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_table-row.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_table-row.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_text-hide.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_text-hide.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_text-truncate.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_text-truncate.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_transition.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_transition.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\mixins\\_visibility.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\mixins\\_visibility.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_align.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_align.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_background.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_background.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_borders.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_borders.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_clearfix.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_clearfix.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_display.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_display.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_embed.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_embed.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_flex.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_flex.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_float.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_float.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_overflow.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_overflow.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_position.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_position.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_screenreaders.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_screenreaders.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_shadows.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_shadows.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_sizing.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_sizing.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_spacing.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_spacing.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_stretched-link.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_stretched-link.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_text.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_text.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\utilities\\_visibility.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\utilities\\_visibility.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\bootstrap\\vendor\\_rfs.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\bootstrap\\vendor\\_rfs.scss"
-    },
-    {
-      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Client\\scss\\style.scss",
-      "PackagePath": "staticwebassets\\Client\\scss\\style.scss"
     },
     {
       "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\admin.zip",

@@ -4,7 +4,7 @@
     Layout = "~/Areas/admin/Views/share/_Layout.cshtml";
 }
 
-@*them san pham*@
+@*them khach hang*@
 <div class="modal fade" id="new" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -109,8 +109,9 @@
         </div>
     </div>
 </div>
+</div>
 
-@* Sua san pham *@
+@* Sua khach hang *@
 <div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -218,7 +219,7 @@
     </div>
 </div>
 
-@*hien thi thong tin san pham*@
+@*hien thi thong tin khach hang*@
 <div class="card">
     <div class="card-header">
         <h4>THÔNG TIN SẢN PHẨM</h4>
@@ -241,7 +242,7 @@
                 <div class="dropdown" style="float:right">
                     <select class="form-select" aria-label="Default select example" id="status">
                         <option selected value="1">Trang thai khach hang</option>
-                        <option value="1">Dang onl/option>
+                        <option value="1">Dang onl</option>
                         <option value="0">Da off</option>
 
                     </select>
@@ -314,7 +315,7 @@
                     var button = $(event.relatedTarget)
                     var idhd = button.data('whatever')
 
-                        khachhang.getkhachhang(idhd);
+                        khachhang.getKhachhang(idhd);
 
                 });
                
@@ -353,6 +354,7 @@
                         $("#edit_address").val(res.data.address);
                         $("#edit_username").val(res.data.username);
                         $("#edit_password").val(res.data.password);
+                        $("#edit_image").val(res.data.image);
                
                     }
                 });
@@ -377,80 +379,81 @@
                     },
                 });
             },
-            create: function () {
-                var name = $("#name").val();
-                var price = $("#age").val();
-                var price = $("#phone").val();
-                var price = $("#address").val();
-                var price = $("#username").val();
-                var price = $("#pasword").val();
-                var image = $("#image").val();
-                
+                create: function () {
+                    var name = $("#name").val();
+                    var age = $("#age").val();
+                    var phone = $("#phone").val();
+                    var address = $("#address").val();
+                    var username = $("#username").val();
+                    var password = $("#password").val(); // Sửa ID của password
+                    var image = $("#image").val();
 
-                var form = new FormData()
-                form.append("name", name);
-                form.append("age", age);
-                form.append("phone", phone);
-                form.append("address", address);
-                form.append("username", username);
-                form.append("password", password);
-                form.append("image", image);
-               
+                    var form = new FormData();
+                    form.append("name", name);
+                    form.append("age", age);
+                    form.append("phone", phone);
+                    form.append("address", address);
+                    form.append("username", username);
+                    form.append("password", password);
+                    form.append("image", image);
 
-                $.ajax({
-                    type: 'POST',
-                    dataType: 'Json',
-                    contentType: false,
-                    processData: false,
-                    data: form,
-                    url: '/Admin/Khachhang/Create/',
-                    success: function (res) {
+                    $.ajax({
+                        type: 'POST',
+                        dataType: 'json', // Chỉnh sửa định dạng dữ liệu trả về
+                        contentType: false,
+                        processData: false,
+                        data: form,
+                        url: '/Admin/Khachhang/Create/',
+                        success: function (res) {
+                            // Hiển thị thông báo thành công hoặc xử lý kết quả khác
+                            _layout.showtoast(res.mess);
+                        khachhang.search(1);
+                        },
+                    });
+                },
 
-                        _layout.showtoast(res.mess);
-                    },
-                });
-            },
-            save: function () {
-            var idp = $("#edit_idc").val();
-            var name = $("#edit_name").val();
-            var price = $("#edit_age").val();
-            var price = $("#edit_phone").val();
-            var price = $("#edit_address").val();
-            var price = $("#edit_username").val();
-            var price = $("#edit_pasword").val();
-            var image = $("#edit_image").val();
+                save: function () {
+                    var idc = $("#edit_idc").val(); // Sửa tên biến idp thành idc
+                    var name = $("#edit_name").val();
+                    var age = $("#edit_age").val();
+                    var phone = $("#edit_phone").val();
+                    var address = $("#edit_address").val();
+                    var username = $("#edit_username").val();
+                    var password = $("#edit_password").val(); // Sửa ID của password
+                    var image = $("#edit_image").val();
 
-            var form = new FormData()
-            form.append("idc", idc);
-            form.append("name", name);
-            form.append("age", age);
-            form.append("phone", phone);
-            form.append("address", address);
-            form.append("username", username);
-            form.append("password", password);
-            form.append("image", image);
+                    var form = new FormData();
+                    form.append("idc", idc);
+                    form.append("name", name);
+                    form.append("age", age);
+                    form.append("phone", phone);
+                    form.append("address", address);
+                    form.append("username", username);
+                    form.append("password", password);
+                    form.append("image", image);
 
-                $.ajax({
-                    type: 'POST',
-                    dataType: 'Json',
-                    contentType: false,
-                    processData: false,
-                    data: form,
-                    url: '/Admin/Khachhang/Update/',
-                    success: function (res) {
-
-                        _layout.showtoast(res.mess);
-                    },
-                });
-            },
+                    $.ajax({
+                        type: 'POST',
+                        dataType: 'json', // Chỉnh sửa định dạng dữ liệu trả về
+                        contentType: false,
+                        processData: false,
+                        data: form,
+                        url: '/Admin/Khachhang/Update/',
+                        success: function (res) {
+                            // Hiển thị thông báo thành công hoặc xử lý kết quả khác
+                            _layout.showtoast(res.mess);
+                        khachhang.search(1);
+                        },
+                    });
+                },
 
            
             
         }
-        khachhang.init();
-        function goto(i) {
-            khachhang.search(i);
-        }
+            khachhang.init();
+            function goto(i) {
+                khachhang.search(i);
+            }
     </script>
 }
 

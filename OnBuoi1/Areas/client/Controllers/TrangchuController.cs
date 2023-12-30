@@ -34,19 +34,25 @@ namespace OnBuoi1.Areas.client.Controllers
 
             foreach (var item in query)
             {
-                text += "<tr>";
-                text += "<td>" + item.Idp + "</td>";
-                text += "<td>" + item.Name + "</td>";
-                text += "<td>" + item.Price + "</td>";
-                text += "<td><img src='" + item.Image + "' alt='Hình ảnh sản phẩm' style='width: 50px; height: 50px; border-radius: 50%; object-fit: cover;'></td>";
+                text += "<div class='col-md-3 p-1'>";
+                text += "<div class='card' style='height: 100%; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(30deg, #33CCFF, #99FF33); border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border: 1px solid #ccc;'>";
+                text += " <img src='" + item.Image + "' class='card-img-top' style='object-fit: cover; height: 200px; width: 100%;'>";
+                text += " <div class='card-body'>";
+
+                text += "<h5 class='card-title' style='font-size: 18px; font-weight: bold; color: #333;'>" + item.Name + "</h5>";
+                text += "<p class='card-text' style='font-size: 14px; color: #555;'>" + item.Price + " $ </p>";
 
 
-                text += "<td>" +
-                    "<a href='javacript:void(0)'  data-toggle='modal' data-target='#update' data-whatever='" + item.Idp + "'><i class='fa fa-edit'></i></a>" + "</td>";
+                text +=
+                    "<a href='javacript:void(0)' data-toggle='modal' data-target='#xemchitiet' data-whatever='" + item.Idp + "'><i class='fas fa-eye'></i> xem chi tiet <i class='far fa-eye'></i></a>"; // Thêm thẻ <i> cho biểu tượng con mắt
+                text += "</div>";
+                text += "</div>";
+                text += "</div>";
 
-                text += " <td>" + "<a href = 'javacript:void(0)'  onclick='sanpham.delete(" + item.Idp + ")' ><i class='fa fa-trash'></i></a>" + "</td>";
 
-                text += "</tr>";
+
+
+
             }
             string page = Support.InTrang(totalp, index, size);
             return Json(new { data = text, page });
