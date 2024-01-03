@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BnUr+tnKh/85sZHo+0BVX949YHEFNrSQUz8aD7fiLY4=",
+  "Hash": "z5JFz3P6cqTWIBQbk+Ac/tpIuA1vJ2D2Vo0JppYgXFY=",
   "Source": "OnBuoi1",
   "BasePath": "_content/OnBuoi1",
   "Mode": "Default",
@@ -40543,6 +40543,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\User\\image\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\User\\image\\logo1.png",
+      "SourceId": "OnBuoi1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\",
+      "BasePath": "_content/OnBuoi1",
+      "RelativePath": "Assets/User/image/logo1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\User\\image\\logo1.png"
     },
     {
       "Identity": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\User\\image\\man2.png",

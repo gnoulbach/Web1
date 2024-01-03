@@ -29,7 +29,8 @@ namespace OnBuoi1.Models.DAO
                              Idp = a.Idp,
                              Name = a.Name,
                              Price = a.Price,
-                             Image = a.Image
+                             Image = a.Image,
+                             Quantity = a.Quantity
                          }).FirstOrDefault();
             return query;
         }
@@ -42,7 +43,8 @@ namespace OnBuoi1.Models.DAO
                              Idp = a.Idp,
                              Name = a.Name,
                              Price = a.Price,
-                             Image = a.Image
+                             Image = a.Image,
+                             Quantity = a.Quantity
                          }).ToList();
             return query;
         }
@@ -60,7 +62,8 @@ namespace OnBuoi1.Models.DAO
                     Idp = a.Idp,
                     Name = a.Name,
                     Price = a.Price,
-                    Image = a.Image
+                    Image = a.Image,
+                    Quantity = a.Quantity
                 })
                 .Skip((index - 1) * size)
                 .Take(size)

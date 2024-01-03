@@ -46,7 +46,7 @@ namespace OnBuoi1.Models.EF
                 entity.Property(e => e.Age).HasColumnName("age");
 
                 entity.Property(e => e.Image)
-                    .HasMaxLength(255)
+                    .HasColumnType("text")
                     .HasColumnName("image");
 
                 entity.Property(e => e.Name)
@@ -84,6 +84,8 @@ namespace OnBuoi1.Models.EF
                     .HasColumnName("name");
 
                 entity.Property(e => e.Price).HasColumnName("price");
+
+                entity.Property(e => e.Quantity).HasColumnName("quantity");
             });
 
             modelBuilder.Entity<User>(entity =>
