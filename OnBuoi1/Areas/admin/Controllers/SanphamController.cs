@@ -10,6 +10,7 @@ namespace OnBuoi1.Areas.admin.Controllers
     [Area("admin")]
     public class SanphamController : Controller
     {
+        private const string KHACHHANG = "KHACHHANG";
         public IActionResult Index()
         {
             List<Lopchung> pagesize = new List<Lopchung>();
@@ -89,5 +90,7 @@ namespace OnBuoi1.Areas.admin.Controllers
             return Json(new { mess = "Xoa san pham thanh cong" });
             
         }
+
+        
     }
 }

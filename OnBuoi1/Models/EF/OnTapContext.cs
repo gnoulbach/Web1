@@ -16,7 +16,10 @@ namespace OnBuoi1.Models.EF
         {
         }
 
+        public virtual DbSet<Chitiethoadon> Chitiethoadons { get; set; } = null!;
+        public virtual DbSet<Hoadon> Hoadons { get; set; } = null!;
         public virtual DbSet<Khachhang> Khachhangs { get; set; } = null!;
+        public virtual DbSet<Quanly> Quanlies { get; set; } = null!;
         public virtual DbSet<Sanpham> Sanphams { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
@@ -31,6 +34,65 @@ namespace OnBuoi1.Models.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Chitiethoadon>(entity =>
+            {
+                entity.HasKey(e => e.Idct);
+
+                entity.ToTable("Chitiethoadon");
+
+                entity.Property(e => e.Idct).HasColumnName("idct");
+
+                entity.Property(e => e.Idh).HasColumnName("idh");
+
+                entity.Property(e => e.Idp).HasColumnName("idp");
+
+                entity.Property(e => e.Image)
+                    .HasColumnType("text")
+                    .HasColumnName("image");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(255)
+                    .HasColumnName("name");
+
+                entity.Property(e => e.Price).HasColumnName("price");
+
+                entity.Property(e => e.Quantity).HasColumnName("quantity");
+
+                entity.Property(e => e.Total).HasColumnName("total");
+            });
+
+            modelBuilder.Entity<Hoadon>(entity =>
+            {
+                entity.HasKey(e => e.Idh)
+                    .HasName("PK_hoadon");
+
+                entity.ToTable("Hoadon");
+
+                entity.Property(e => e.Idh).HasColumnName("idh");
+
+                entity.Property(e => e.Address)
+                    .HasMaxLength(255)
+                    .HasColumnName("address");
+
+                entity.Property(e => e.Date)
+                    .HasColumnType("datetime")
+                    .HasColumnName("date");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Idc).HasColumnName("idc");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(255)
+                    .HasColumnName("name");
+
+                entity.Property(e => e.Phone)
+                    .HasMaxLength(255)
+                    .HasColumnName("phone");
+
+                entity.Property(e => e.Total).HasColumnName("total");
+            });
+
             modelBuilder.Entity<Khachhang>(entity =>
             {
                 entity.HasKey(e => e.Idc);
@@ -60,6 +122,23 @@ namespace OnBuoi1.Models.EF
                 entity.Property(e => e.Phone)
                     .HasMaxLength(255)
                     .HasColumnName("phone");
+
+                entity.Property(e => e.Username)
+                    .HasMaxLength(255)
+                    .HasColumnName("username");
+            });
+
+            modelBuilder.Entity<Quanly>(entity =>
+            {
+                entity.HasKey(e => e.Idq);
+
+                entity.ToTable("Quanly");
+
+                entity.Property(e => e.Idq).HasColumnName("idq");
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(255)
+                    .HasColumnName("password");
 
                 entity.Property(e => e.Username)
                     .HasMaxLength(255)

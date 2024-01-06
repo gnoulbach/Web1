@@ -1,0 +1,242 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/admin/Views/share/_Layout.cshtml";
+}
+@*hien thi thong tin*@
+<div class="card">
+    <div class="card-header">
+        <h4>THÔNG TIN HÓA ĐƠN</h4>
+    </div>
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new">
+                    Thêm mới
+                </button>
+            </div>
+            <div class="col-md-3">
+                <span>Số dòng/trang</span>
+            </div>
+            <div class="col-md-2">
+                @Html.DropDownList("Pagesize", new SelectList(ViewBag.Pagesize, "ID", "ID"), new { @class = "form-control" })
+            </div>
+            <div class="col-md-3">
+                <div class="dropdown" style="float:right">
+                    <select class="form-select" aria-label="Default select example" id="status">
+                        <option selected value="0">Trạng thái hóa đơn</option>
+                        <option value="0">Chưa xác nhận</option>
+                        <option value="1">Đang giao</option>
+                        <option value="2">Đã giao</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="idh" />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        STT
+                    </th>
+                    <th>
+                        Họ tên người đặt
+                    </th>
+                    <th>
+                        Tổng tiền
+                    </th>
+                    <th>
+                        Ngày đặt
+                    </th>
+                    <th>
+                        Số ĐT người nhận
+                    </th>
+                    <th>
+                        Địa chỉ
+                    </th>
+
+                    <th> Xem chi tiết</th>
+                    <th> </th>
+                </tr>
+            </thead>
+
+            <tbody id="tbData"></tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="100" id="pages">
+
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+@*hien thi chi tiet thong tin *@
+<div class="modal fade" id="xemchitiet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>CHI TIẾT HÓA ĐƠN</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        STT
+                                    </th>
+                                    <th>
+                                        ID hóa đơn
+                                    </th>
+                                    <th>
+                                        Tên sản phẩm
+                                    </th>
+                                    <th>
+                                        Đơn giá
+                                    </th>
+                                    <th>
+                                        Số lượng
+                                    </th>
+
+                                    <th>
+                                        Thành Tiền
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody id="tbData_detail"></tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="button" id="create" class="btn btn-primary" data-bs-dismiss="modal">Thêm mới</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quay lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        var hoadon = {
+            init: function () {
+                hoadon.search(1);
+                $("#search").change(function () {
+                    hoadon.search(1);
+                });
+                $("#Pagesize").change(function () {
+                    hoadon.search(1);
+                });
+                $("#status").change(function () {
+                    hoadon.search(1);
+                });
+                $("#create").click(function () {
+                    hoadon.create();
+                });
+                $('#xemchitiet').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget) // Button that triggered the modal
+                    var idh = button.data('whatever') // Mã sách
+                    //Gọi tác đã thêm và tác giả chưa thêm
+                    hoadon.xemchitiet(idh);
+                    //  var modal = $(this)
+                    // modal.find('.modal-title').text('New message to ' + masach)
+                    // modal.find('.modal-body input').val(recipient)
+                })
+
+            },
+
+            search: function (index) {
+                var status = $("#status").val();
+                var size = $("#Pagesize").val();
+                var form = new FormData()
+
+                form.append("size", size);
+                form.append("status", status);
+                form.append("index", index);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/admin/Hoadon/ShowList/',
+                    success: function (res) {
+                        $("#tbData").html(res.data);
+                        $("#pages").html(res.page);
+                    },
+                });
+            },
+            create: function () {
+                var id = $("#id").val();
+                var idc = $("#idc").val();
+                var name = $("#name").val();
+                var total = $("#total").val();
+                var date = $("#date").val();
+                var phone = $("#phone").val();
+                var address = $("#address").val();
+                
+
+                var form = new FormData()
+                form.append("id", id);
+                form.append("idc", idc);
+                form.append("name", name);
+                form.append("total", total);
+                form.append("date", date);
+                form.append("phone", phone);
+                form.append("address", address);
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/Admin/Hoadon/Create/',
+                    success: function (res) {
+
+                        _layout.showtoast(res.mess);
+                    },
+                });
+            },
+            xemchitiet: function (id) {
+                $("#idh").val(id);
+
+                $.ajax({
+                    type: 'get',
+                    dataType: 'JSON',
+                    url: '/Admin/Chitiethoadon/ShowList/' + id,
+                    success: function (res) {
+                        $("#tbData_detail").html(res.data);
+
+                    }
+                });
+            }
+
+        }
+        hoadon.init();
+        function goto(i) {
+            hoadon.search(i);
+        }
+    </script>
+}

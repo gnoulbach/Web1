@@ -1,6 +1,7 @@
 ﻿using OnBuoi1.Models.EF;
 using OnBuoi1.Models.VIEW;
 
+
 namespace OnBuoi1.Models.DAO
 {
     public class khachhangDAO
@@ -24,7 +25,7 @@ namespace OnBuoi1.Models.DAO
 
             var query = (from a in context.Khachhangs
                          where a.Idc == idc
-                         select new khachhangVIEW 
+                         select new khachhangVIEW
                          {
                              Idc = a.Idc,
                              Name = a.Name,
@@ -92,6 +93,36 @@ namespace OnBuoi1.Models.DAO
         internal object search(string name, out int total, int index, int size)
         {
             throw new NotImplementedException();
+        }
+
+        public Boolean Login(String username, String password)
+        {
+            var query = (from a in context.Khachhangs
+                         where a.Username == username && a.Password == password
+                         select new khachhangVIEW
+                         {
+                             Idc = a.Idc,
+                             Name = a.Name,
+                             Age = a.Age,
+                             Phone = a.Phone,
+                             Address = a.Address,
+                             Username = a.Username,
+                             Password = a.Password,
+                             Image = a.Image
+                         }).FirstOrDefault();
+            if (query != null)
+                return true;
+            return false;
+        }
+        public int Login(String username)
+        {
+            var query = (from a in context.Khachhangs
+                         select new khachhangVIEW
+                         {
+                             Idc = a.Idc,
+
+                         }).FirstOrDefault();
+            return query.Idc;
         }
     }
 }
