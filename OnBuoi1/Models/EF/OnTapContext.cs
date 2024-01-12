@@ -158,6 +158,10 @@ namespace OnBuoi1.Models.EF
                     .HasColumnType("text")
                     .HasColumnName("image");
 
+                entity.Property(e => e.Info)
+                    .HasMaxLength(255)
+                    .HasColumnName("info");
+
                 entity.Property(e => e.Name)
                     .HasMaxLength(255)
                     .HasColumnName("name");

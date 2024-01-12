@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9hZG9uXENoYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Areas/admin/Views/Hoadon/ChartProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9hZG9uXENoYXJ0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Areas/admin/Views/Hoadon/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9hZG9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Areas/client/Views/Trangchu/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcY2xpZW50XFZpZXdzXFRyYW5nY2h1XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Areas/client/Views/Trangchu/Signin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcY2xpZW50XFZpZXdzXFRyYW5nY2h1XFNpZ25pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Views/Home/Index.cshtml]

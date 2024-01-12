@@ -25,6 +25,21 @@ namespace OnBuoi1.Areas.client.Controllers
             ViewBag.Pagesize = pagesize;
             return View();
         }
+
+        public JsonResult Update(int idp, string name, int price, string image, int quantity, string info)
+        {
+
+            sanphamDAO sanpham = new sanphamDAO();
+            var item = sanpham.getItem(idp);
+            item.Name = name;
+            item.Price = price;
+            item.Image = image;
+            item.Quantity = quantity;
+            item.Info = info;
+            sanpham.InsertOrUpdate(item);
+            return Json(new { mess = "Chinh sua san pham thanh cong" });
+        }
+
         public JsonResult ShowList(string name = "", int index = 1, int size = 100)
         {
 
@@ -36,17 +51,17 @@ namespace OnBuoi1.Areas.client.Controllers
 
             foreach (var item in query)
             {
-                text += "<div class='col-lg-2 col-md-4 col-sm-6 mb-3'>"; // Adjusted column sizes for responsiveness
+                text += "<div class='col-lg-2 col-md-4 col-sm-6 mb-3' >"; // Adjusted column sizes for responsiveness
                 text += "<div class='card h-100' style='border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 1px solid #ccc;'>"; // Added Bootstrap classes for card
                 text += "<img src='" + item.Image + "' class='card-img-top rounded-top' style='object-fit: cover; height: 200px; border-radius: 8px 8px 0 0;'>"; // Added Bootstrap classes for image
                 text += "<div class='card-body'>";
                 text += "<h6 class='card-title mb-2' style='font-size: 14px; font-weight: bold; color: #333;'>" + item.Name + "</h6>"; // Adjusted font size and margin for title
                 text += "<p class='card-text mb-2' style='font-size: 23px; color: red; font-weight: bold;'>" + item.Price + " <span style='font-weight: bold;'>$</span></p>"; // Adjusted font size and color for price
-                text += "<a href='javascript:void(0)' class='btn btn-sm btn-info' data-toggle='modal' data-target='#xemchitiet' data-whatever='" + item.Idp + "' style='font-size: 12px; text-decoration: none;'>Xem chi tiết <i class='far fa-eye'></i></a>"; // Added Bootstrap button classes for "Xem chi tiết" button
+                text += "<a href='javascript:void(0)' class='btn btn-sm btn-info' data-toggle='modal' style='background: linear-gradient(40deg,#CC00FF, #FFCC00);' data-target='#update' data-whatever='" + item.Idp + "' style='font-size: 12px; text-decoration: none;'>Xem chi tiết <i class='far fa-eye'></i></a>"; // Added Bootstrap button classes for "Xem chi tiết" button
                 text += "</div>";
                 text += "</div>";
                 text += "</div>";
-
+               
 
             }
             string page = Support.InTrang(totalp, index, size);

@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\Assets.zip"
     },
     {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\bach.gif",
+      "PackagePath": "staticwebassets\\Assets\\Client\\bach.gif"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\bach1.gif",
+      "PackagePath": "staticwebassets\\Assets\\Client\\bach1.gif"
+    },
+    {
       "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Client\\css\\.DS_Store",
       "PackagePath": "staticwebassets\\Assets\\Client\\css\\.DS_Store"
     },
@@ -575,6 +583,10 @@
     {
       "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Home\\js\\script.js",
       "PackagePath": "staticwebassets\\Assets\\Home\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Login\\login-bg.png",
+      "PackagePath": "staticwebassets\\Assets\\Login\\login-bg.png"
     },
     {
       "Id": "C:\\Users\\BACH\\OneDrive\\Máy tính\\Web1\\OnBuoi1\\wwwroot\\Assets\\Login\\test.css",

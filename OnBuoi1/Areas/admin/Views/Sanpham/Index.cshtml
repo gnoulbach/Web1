@@ -61,6 +61,16 @@
                                             <input type="number" class="form-control bg-white" id="quantity" />
                                         </div>
                                     </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Thông Tin
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="info" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -139,6 +149,16 @@
                                             <input type="number" class="form-control bg-white" id="edit_quantity" />
                                         </div>
                                     </div>
+                                    <div class="col-md-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    Thong Tin
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control bg-white" id="edit_info" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -160,6 +180,7 @@
 </div>
 
 @*hien thi thong tin san pham*@
+
 <div class="card">
     <div class="card-header">
         <h4>THÔNG TIN SẢN PHẨM</h4>
@@ -192,21 +213,24 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>
+                    <th id="text">
                         ID
                     </th>
-                    <th>
+                    <th id ="text">
                         Hình Ảnh
                     </th>
-                    <th>
+                    <th id="text">
                         Tên Sản Phẩm
                     </th>
-                    <th>
+                    <th id="text">
                         Giá
                     </th>
                     
-                    <th>
+                    <th id="text">
                         Số Lượng
+                    </th>
+                    <th id="text">
+                        Thông Tin
                     </th>
                  
                     <th> </th>
@@ -283,6 +307,7 @@
                         $("#edit_price").val(res.data.price);
                         $("#edit_image").val(res.data.image);
                         $("#edit_quantity").val(res.data.quantity);
+                        $("#edit_info").val(res.data.info);
                         
                         
 
@@ -314,12 +339,14 @@
                 var price = $("#price").val();
                 var image = $("#image").val();
                 var quantity = $("#quantity").val();
+                var info = $("#info").val();
 
                 var form = new FormData()
                 form.append("name", name);
                 form.append("price", price);
                 form.append("image", image);
                 form.append("quantity", quantity);
+                form.append("info", info);
 
                 $.ajax({
                     type: 'POST',
@@ -341,6 +368,7 @@
                 var price = $("#edit_price").val();
                 var image = $("#edit_image").val();
                 var quantity = $("#edit_quantity").val();
+                var info = $("#edit_info").val();
 
                 var form = new FormData()
                 form.append("idp", idp);
@@ -348,6 +376,7 @@
                 form.append("price", price);
                 form.append("image", image);
                 form.append("quantity", quantity);
+                form.append("info", info);
 
                 $.ajax({
                     type: 'POST',

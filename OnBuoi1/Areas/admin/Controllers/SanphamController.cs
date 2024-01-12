@@ -23,7 +23,7 @@ namespace OnBuoi1.Areas.admin.Controllers
             ViewBag.Pagesize = pagesize;
             return View();
         }
-        public JsonResult Create(string name, int price, string image , int quantity)
+        public JsonResult Create(string name, int price, string image , int quantity, string info)
         {
 
             sanphamDAO sanpham = new sanphamDAO();
@@ -32,10 +32,11 @@ namespace OnBuoi1.Areas.admin.Controllers
             item.Price = price;
             item.Image = image;
             item.Quantity = quantity;
+            item.Info = info;
             sanpham.InsertOrUpdate(item);
             return Json(new { mess = "Them san pham thanh cong" });
         }
-        public JsonResult Update(int idp, string name, int price, string image, int quantity)
+        public JsonResult Update(int idp, string name, int price, string image, int quantity, string info)
         {
 
             sanphamDAO sanpham = new sanphamDAO();
@@ -44,6 +45,7 @@ namespace OnBuoi1.Areas.admin.Controllers
             item.Price = price;
             item.Image = image;
             item.Quantity = quantity;
+            item.Info = info;
             sanpham.InsertOrUpdate(item);
             return Json(new { mess = "Chinh sua san pham thanh cong" });
         }
@@ -65,7 +67,7 @@ namespace OnBuoi1.Areas.admin.Controllers
                 text += "<td>" + item.Name + "</td>";
                 text += "<td>" + item.Price + "</td>";
                 text += "<td>" + item.Quantity + "</td>";
-
+                text += "<td>" + item.Info + "</td>";
                 text += "<td>" +
                     "<a href='javacript:void(0)'  data-toggle='modal' data-target='#update' data-whatever='" + item.Idp + "'><i class='fa fa-edit'></i></a>" + "</td>";
 

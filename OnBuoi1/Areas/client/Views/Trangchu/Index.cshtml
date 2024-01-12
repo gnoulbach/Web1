@@ -140,6 +140,160 @@
 
 
 
+@* thong tin chi tiet san pham*@
+
+<style>
+    /* Loại bỏ đường viền và padding của các input */
+.input-group {
+    border: none;
+    padding: 0;
+}
+
+/* Tùy chỉnh giao diện input */
+.form-control {
+    border-radius: 0; /* Góc bo tròn */
+    border: none; /* Loại bỏ đường viền */
+    box-shadow: none; /* Loại bỏ bóng đổ */
+}
+
+/* Tùy chỉnh giao diện cho input số */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Tùy chỉnh giao diện cho input số trên Firefox */
+[type="number"] {
+    -moz-appearance: textfield;
+}
+    /* Tăng kích thước của ảnh */
+    #edit_image {
+        width: 100%; /* Điều chỉnh kích thước theo chiều rộng của div */
+        height: 400px; /* Giữ tỷ lệ khung hình */
+        /* Thêm viền cho ảnh */
+        border: 3px solid #ccc; /* Đổi màu và độ dày của viền */
+        border-radius: 10px; /* Làm cho góc viền cong hơn */
+    }
+
+
+    /* CSS để áp dụng cho các phần tử HTML */
+    #edit_name {
+        background: linear-gradient(40deg,#CC00FF, #FFCC00);
+        -webkit-background-clip: text; /* cho trình duyệt Safari */
+        -webkit-text-fill-color: transparent; /* cho trình duyệt Safari */
+        background-clip: text;
+        color: transparent;
+        font-size: 25px; /* Chữ to */
+        font-weight: bold; /* Chữ in đậm */
+        margin-bottom: 20px;
+    }
+
+    #edit_price {
+        color: #CC0000; /* Chữ màu đỏ */
+        font-size: 16px; /* Chữ vừa */
+    }
+
+    #edit_quantity {
+        color: #FFFFFF; /* Chữ màu trắng */
+        font-size: 16px; /* Chữ vừa */
+    }
+
+    /* CSS cho container chứa thông tin */
+    .info-container {
+        width: 100%; /* Điều chỉnh theo kích thước mong muốn */
+        /* Ngăn ngừa tràn chữ */
+        word-wrap: break-word;
+    }
+
+    /* CSS cho phần thông tin */
+    #edit_info {
+        color: #888888;
+        font-size: 14px;
+    }
+
+
+
+
+</style>
+
+<div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="background: linear-gradient(40deg,#CC00FF, #FFCC00);">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="">
+                    <div class="input-group">
+                        <p type="text" class="" id="edit_name" ></p>
+                        <input type="text" hidden id="edit_idp" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body" >
+                <div class="row">
+                    <div class="col-md-6" >
+                        <img src="" alt="Hình ảnh sản phẩm" class="img-fluid" id="edit_image"  />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            
+                            <div class="card-body">
+                               
+                                    
+                                    <div class="">
+                                        <div class="input-group">
+                                            <p class="">
+                                            <div class="info-container">
+                                                <h3>Giới Thiệu</h3>
+                                                <span id="edit_info"></span>
+                                            </div>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="">
+                                        <div class="input-group">
+                                            <p class="form-control">
+                                                <span style="font-weight: bold; font-size: larger; color: grey;">Giá: </span><span id="edit_price"></span> $
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="input-group">
+                                            <p class="form-control">
+                                                <span style="font-weight: bold; font-size: larger; color: grey;">Số Lượng: </span><span id="edit_quantity"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                    <button type="button" id="save" class="btn btn-primary" data-bs-dismiss="modal" style="background: linear-gradient(40deg,#CC00FF, #FFCC00);">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                        
+                                    </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @section scripts{
@@ -153,6 +307,18 @@
                     trangchu.search(1);
                 });
                 $("#Pagesize").change(function () {
+                    trangchu.search(1);
+                });
+                $('#update').on('show.bs.modal', function (event) {
+                    var button = $(event.relatedTarget)
+                    var idhd = button.data('whatever')
+
+                    trangchu.getsanpham(idhd);
+
+                });
+
+                $("#save").click(function () {
+                    trangchu.save();
                     trangchu.search(1);
                 });
                 
@@ -184,15 +350,48 @@
                 $.ajax({
                     type: 'get',
                     dataType: 'JSON',
-                    url: '/cilent/Trangchu/getSanPham/' + id,
+                    url: '/client/Trangchu/getSanPham/' + id,
                     success: function (res) {
                         $("#edit_idp").val(res.data.idp);
-                        $("#edit_name").val(res.data.name);
-                        $("#edit_price").val(res.data.price);
-                        $("#edit_image").val(res.data.image);
+                        $("#edit_name").text(res.data.name);
+                        $("#edit_price").text(res.data.price);
+                        $("#edit_image").attr("src", res.data.image);
+                        $("#edit_quantity").text(res.data.quantity);
+                        $("#edit_info").text(res.data.info);
                         
       
                     }
+                });
+            },
+
+            save: function () {
+                var idp = $("#edit_idp").val();
+                var name = $("#edit_name").val();
+                var price = $("#edit_price").val();
+                var image = $("#edit_image").val();
+                var quantity = $("#edit_quantity").val();
+                var info = $("#edit_info").val();
+
+                var form = new FormData()
+                form.append("idp", idp);
+                form.append("name", name);
+                form.append("price", price);
+                form.append("image", image);
+                form.append("quantity", quantity);
+                form.append("info", info);
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/client/Trangchu/Update/',
+                    success: function (res) {
+
+                        _layout.showtoast(res.mess);
+                        trangchu.search(1);
+                    },
                 });
             },
 

@@ -11,6 +11,54 @@
     <link href="~/Assets/Login/test.css" rel="stylesheet" />
 </head>
 <body>
+    <style>
+        
+    #loading {
+        background-color: white;
+        position: fixed;
+        display: block;
+        top: 0;
+        bottom: 0;
+        z-index: 1000000;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+        #loading img {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            display: block;
+            top: calc(30% );
+            left: calc(40% );
+            position: absolute;
+            z-index: 999999;
+        }
+
+    .no-wrap {
+        white-space: nowrap;
+    }
+
+        a {
+            position: absolute;
+            right: 0; /* Align to the right */
+            margin-left: auto;
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            top: calc(95% ); /* Adjust the top distance as needed */
+        }
+
+        form {
+            position: relative;
+        }
+        
+</style>
+<div id="loading" style="display:none">
+    <img src="~/Assets/Client/bach1.gif" alt="Loading..." />
+</div>
     <div class="login-box">
         <h2>Login</h2>
         <form>
@@ -22,14 +70,21 @@
                 <input type="password" id="password" name="" required="">
                 <label>Password</label>
             </div>
+            
             <button type="button" id="login">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Submit
+                Login
             </button>
+            <div>
+                <a href="https://localhost:7244/Client/trangchu/Signin/">Đăng ký tài khoản</a>
+            </div>
+            
         </form>
+
+        
     </div>
 
 
@@ -55,6 +110,7 @@
                 var form = new FormData()
                 form.append("username", username);
                 form.append("password", password);
+                $("#loading").show();
                 $.ajax({
                     type: 'POST',
                     dataType: 'Json',
@@ -69,6 +125,7 @@
                         else {
                             alert (res.mess)
                         }
+                        $("#loading").hide();
                     },
                 });
             },

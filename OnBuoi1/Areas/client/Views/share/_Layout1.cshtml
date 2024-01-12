@@ -26,6 +26,7 @@
     <link href="~/Assets/Themes2/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
 
 
@@ -115,6 +116,25 @@
                 .inputField button:hover {
                     background-color: #e24e3e; /* Change button background color on hover */
                 }
+
+        #log {
+            /* Thêm một số kiểu dáng, ví dụ như màu sắc hoặc kích thước */
+            font-size: 14px; /* Điều chỉnh kích thước icon */
+            color: #CC0000; /* Màu icon */
+            border-radius: 50%;
+        }
+
+        .header-login flex{
+            border-radius: 50%;
+        }
+
+        #text_cart{
+            background: linear-gradient(40deg,#CC00FF, #FFCC00);
+            -webkit-background-clip: text; /* cho trình duyệt Safari */
+            -webkit-text-fill-color: transparent; /* cho trình duyệt Safari */
+            background-clip: text;
+            color: transparent;
+        }
     </style>
 </head>
 <body class="home">
@@ -129,7 +149,7 @@
         <div class="toast-body" id="toast-message">
         </div>
     </div>
-    <input id="search" hidden />
+    
     <header class="primary-header container flex" style="font-size: 200%;">
    
 
@@ -151,7 +171,7 @@
                         data-visible="false"
                         class="primary-navigation flex">
                         <li>
-                            <a class="active fs-100 fs-montserrat bold-500" href="~/Client/trangchu/Home">Home</a>
+                            <a class="active fs-100 fs-montserrat bold-500" href="~/Client/trangchu/index">Home</a>
                         </li>
                         <li>
                             <a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a>
@@ -172,15 +192,19 @@
                 </nav>
             </div>
 
-            <div class="header-login flex">
 
-            @*<p class="fs-100 fs-montserrat bold-500"><a href="/Client/trangchu/Login">Login</a></p>*@
-            <div id="log">
-            </div>
-            <i class="uil uil-search"></i>
+        
+            
+            <input type="text" class="form-control bg-light border-0 small"
+                    style="width: 150px; height: 30px; font-size: 14px;"
+                    placeholder="Search for..." id="search"
+                    aria-label="Search" aria-describedby="basic-addon2">
+                        <i class="uil uil-search" ></i>
+                   
+     
             <i id="cart-box"
                aria-controls="cart-icon"
-               class="uil uil-shopping-bag"></i>
+               class="uil uil-shopping-bag" ></i>
 
             <!-- =================1111111111================== -->
             <div id="cart-icon" data-visible="false" class="cart-icon" style="top: 80px ;width:500px;height:400px;">
@@ -189,14 +213,21 @@
                     <i id="cross-btn" class="uil uil-times"></i>
                 </div>
                 <div class="cart bold-800 flex">
-                    <i class="uil uil-shopping-cart-alt"></i>
-                    <p>Cart Is Empty</p>
+                <i id="text_cart" class="uil uil-shopping-cart-alt"></i>
+                <p id="text_cart">Cart Is Empty</p>
 
                     <!-- ================================================== -->
                     <!-- ================================================== -->
                 </div>
             </div>
+        <div class="header-login flex" style="border-radius: 50%;">
+
+            @*<p class="fs-100 fs-montserrat bold-500"><a href="/Client/trangchu/Login">Login</a></p>*@
+            <div id="log" style="border-radius: 50%;">
+                <!-- Sử dụng biểu tượng đăng xuất của Font Awesome -->
+                <i class="fa-solid fa-right-to-bracket"></i>
             </div>
+        </div>
             <div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
         </header>
         <div>
