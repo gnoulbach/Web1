@@ -25,7 +25,7 @@ namespace OnBuoi1.Areas.client.Controllers
             ViewBag.Pagesize = pagesize;
             return View();
         }
-
+       
         public JsonResult Update(int idp, string name, int price, string image, int quantity, string info)
         {
 
@@ -110,11 +110,34 @@ namespace OnBuoi1.Areas.client.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return Redirect("/Client/Trangchu/Login"); // Chuyển hướng đến URL cụ thể
+            return Redirect("/Client/Trangchu/Login");
         }
 
+        public IActionResult Signin()
+        {
+            return View();
+        }
+        [HttpPost]
+        public JsonResult Dangky(string name, int age, string phone, string address, string username, string password, string image)
+        {
+
+            khachhangDAO khachhang = new khachhangDAO();
+            Khachhang item = new Khachhang();
+            item.Name = name;
+            item.Age = age;
+            item.Phone = phone;
+            item.Address = address;
+            item.Username = username;
+            item.Password = password;
+
+            item.Image = image;
 
 
+            khachhang.InsertOrUpdate(item);
 
+            return Json(new { mess = "Đăng ký thành công" });
+
+        }
+        
     }
 }

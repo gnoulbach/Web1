@@ -1,1 +1,174 @@
-﻿z
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Signin</title>
+    <link href="~/Assets/Login/test.css" rel="stylesheet" />
+    <style>
+
+        #loading {
+            background-color: white;
+            position: fixed;
+            display: block;
+            top: 0;
+            bottom: 0;
+            z-index: 1000000;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+            #loading img {
+                width: 300px;
+                height: 300px;
+                margin: auto;
+                display: block;
+                top: calc(30% );
+                left: calc(40% );
+                position: absolute;
+                z-index: 999999;
+            }
+
+        .no-wrap {
+            white-space: nowrap;
+        }
+
+        a {
+            position: absolute;
+            right: 0; /* Align to the right */
+            margin-left: auto;
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+            top: calc(95% ); /* Adjust the top distance as needed */
+        }
+
+        form {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="login-box">
+        <h2>Signin</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" id="name" required="">
+                <label>Name</label>
+            </div>
+
+            <div class="user-box">
+                <input type="text" name="" id="age" required="">
+                <label>Age</label>
+            </div>
+
+            <div class="user-box">
+                <input type="text" name="" id="phone" required="">
+                <label>Phone</label>
+            </div>
+
+            <div class="user-box">
+                <input type="text" name="" id="address" required="">
+                <label>Address</label>
+            </div>
+
+            <div class="user-box">
+                <input type="text" name="" id="username" required="">
+                <label>Username</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" id="password" name="" required="">
+                <label>Password</label>
+            </div>
+
+            <div class="user-box">
+                <input type="text" name="" id="image" required="">
+                <label>Image</label>
+            </div>
+
+
+            <button type="button" id="signin">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Signin
+            </button>
+            
+
+        </form>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="~/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="~/Assets/Client/js/popper.js"></script>
+
+</body>
+
+    <script>
+
+        
+        var signin = {
+            init: function () {
+                
+
+                $("#signin").click(function () {
+                    signin.dangky();
+                });
+
+            },
+
+
+            dangky: function () {
+                var name = $("#name").val();
+                var age = $("#age").val();
+                var phone = $("#phone").val();
+                var address = $("#address").val();
+                var username = $("#username").val();
+                var password = $("#password").val();
+                var image = $("#image").val();
+                
+                var form = new FormData();
+                form.append("name", name);
+                form.append("age", age);
+                form.append("phone", phone);
+                form.append("address", address);
+                form.append("username", username);
+                form.append("password", password);
+                form.append("image", image);
+                
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/client/Trangchu/Dangky/',
+                    success: function (res) {
+                    alert(res.mess)
+                        window.location.href = "/client/Trangchu/Login"
+                    },
+                });
+            },
+
+
+        }
+        signin.init();
+       
+    </script>
+
+</html>
