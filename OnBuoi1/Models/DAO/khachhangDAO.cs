@@ -117,12 +117,26 @@ namespace OnBuoi1.Models.DAO
         public int Login(String username)
         {
             var query = (from a in context.Khachhangs
+                         where a.Username == username
                          select new khachhangVIEW
                          {
                              Idc = a.Idc,
 
                          }).FirstOrDefault();
             return query.Idc;
+        }
+
+        public  khachhangVIEW checkstatus(String name)
+        {
+            var query = (from a in context.Khachhangs
+                         where a.Username == name
+                         select new khachhangVIEW
+                         {
+                             Idc = a.Idc,
+                             Name = a.Name,
+
+                         }).FirstOrDefault();
+            return query;
         }
     }
 }

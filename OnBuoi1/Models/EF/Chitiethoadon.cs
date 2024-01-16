@@ -13,5 +13,8 @@ namespace OnBuoi1.Models.EF
         public int? Total { get; set; }
         public string? Image { get; set; }
         public string? Name { get; set; }
+
+        public virtual Hoadon? IdhNavigation { get; set; }
+        public virtual Sanpham? IdpNavigation { get; set; }
     }
 }

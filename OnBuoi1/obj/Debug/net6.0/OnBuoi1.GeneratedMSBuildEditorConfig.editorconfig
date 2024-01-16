@@ -68,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcY2xpZW50XFZpZXdzXHNoYXJlXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Areas/client/Views/Trangchu/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcY2xpZW50XFZpZXdzXFRyYW5nY2h1XENhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/BACH/OneDrive/Máy tính/Web1/OnBuoi1/Areas/client/Views/Trangchu/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcY2xpZW50XFZpZXdzXFRyYW5nY2h1XEhvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

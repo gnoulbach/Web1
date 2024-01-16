@@ -4,6 +4,9 @@
     Layout = "~/Areas/client/Views/share/_Layout1.cshtml";
 }
 
+
+
+
 @* slide *@
 <!DOCTYPE html>
 <html lang="en">
@@ -224,7 +227,7 @@
                 <div class="">
                     <div class="input-group">
                         <p type="text" class="" id="edit_name" ></p>
-                        <input type="text" hidden id="edit_idp" />
+                        <input type="number" hidden id="edit_idp" />
                     </div>
                 </div>
             </div>
@@ -267,7 +270,7 @@
 
 
                                     <div class="modal-footer">
-                                    <button type="button" id="save" class="btn btn-primary" data-bs-dismiss="modal" style="background: linear-gradient(40deg,#CC00FF, #FFCC00);">
+                                    <button type="button" id="create" class="btn btn-primary" data-bs-dismiss="modal" style="background: linear-gradient(40deg,#CC00FF, #FFCC00);">
                                             <i class="fas fa-shopping-cart"></i>
                                         </button>
                                         
@@ -316,34 +319,37 @@
                     trangchu.getsanpham(idhd);
 
                 });
+                $("#create").click(function () {
+                    trangchu.AddCart();
+                });
 
                 $("#save").click(function () {
                     trangchu.save();
                     trangchu.search(1);
                 });
-                
+
             },
 
-                search: function (index) {
-                    var name = $("#search").val();
-                    var size = $("#Pagesize").val();
-                    var form = new FormData()
-                    form.append("name", name);
-                    form.append("size", size);
-                    form.append("index", index);
-                    $.ajax({
-                        type: 'POST',
-                        dataType: 'Json',
-                        contentType: false,
-                        processData: false,
-                        data: form,
+            search: function (index) {
+                var name = $("#search").val();
+                var size = $("#Pagesize").val();
+                var form = new FormData()
+                form.append("name", name);
+                form.append("size", size);
+                form.append("index", index);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
                     url: '/client/Trangchu/ShowList/',
-                        success: function (res) {
-                            $("#tbData").html(res.data);
-                            $("#pages").html(res.page);
-                        },
-                    });
-                },
+                    success: function (res) {
+                        $("#tbData").html(res.data);
+                        $("#pages").html(res.page);
+                    },
+                });
+            },
             getsanpham: function (id) {
 
 
@@ -358,8 +364,8 @@
                         $("#edit_image").attr("src", res.data.image);
                         $("#edit_quantity").text(res.data.quantity);
                         $("#edit_info").text(res.data.info);
-                        
-      
+
+
                     }
                 });
             },
@@ -394,7 +400,33 @@
                     },
                 });
             },
+            AddCart: function () {
+                var idp = $('#edit_idp').val();
+                var price = $('#edit_price').val();
+                var quantity = $('#edit_quantity').val();
+                var form = new FormData()
+                form.append("idp", idp);
+                form.append("price", price);
 
+                form.append("quantity", quantity);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'Json',
+                    contentType: false,
+                    processData: false,
+                    data: form,
+                    url: '/Client/trangchu/AddCart/',
+                    success: function (res) {
+                        if (res.state) {
+                            alert("Them thanh cong")
+                            _layout.showtoast(res.mess);
+                        }
+                        else {
+                            window.location.href = "/Client/trangchu/login";
+                        }
+                    },
+                });
+            },
 
         }
 
@@ -404,4 +436,3 @@
         }
     </script>
 }
-

@@ -20,6 +20,11 @@ namespace OnBuoi1.Models.DAO
 
             return context.Hoadons.Where(x => x.Idh == idh).FirstOrDefault();
         }
+        public Hoadon getItemOrder(int idc)
+        {
+
+            return context.Hoadons.Where(x => x.Idc == idc ).FirstOrDefault();
+        }
         public hoadonVIEW getItemView(int idh)
         {
 
@@ -34,7 +39,8 @@ namespace OnBuoi1.Models.DAO
                              Date = a.Date,
                              Name = a.Name,
                              Phone = a.Phone,
-                             Address = a.Address
+                             Address = a.Address,
+                             Status = a.Status
                          }).FirstOrDefault();
             return query;
         }
@@ -42,6 +48,7 @@ namespace OnBuoi1.Models.DAO
         public List<hoadonVIEW> getList()
         {
             var query = (from a in context.Hoadons
+                         join b in context.Khachhangs on a.Idc equals b.Idc
                          select new hoadonVIEW
                          {
                              Idh = a.Idh,
@@ -51,7 +58,8 @@ namespace OnBuoi1.Models.DAO
                              Date = a.Date,
                              Name = a.Name,
                              Phone = a.Phone,
-                             Address = a.Address
+                             Address = a.Address,
+                             Status = a.Status
                          }).ToList();
             return query;
         }
@@ -73,7 +81,8 @@ namespace OnBuoi1.Models.DAO
                     Date = a.Date,
                     Name = a.Name,
                     Phone = a.Phone,
-                    Address = a.Address
+                    Address = a.Address,
+                    Status = a.Status
                 })
                 .Skip((index - 1) * size)
                 .Take(size)
@@ -94,6 +103,83 @@ namespace OnBuoi1.Models.DAO
         {
             throw new NotImplementedException();
         }
+
+
+
+        public Boolean Kiemtragohang(int idc)
+        {
+            var query = (from a in context.Hoadons
+                         where (a.Idc == idc)
+                         select new hoadonVIEW
+                         {
+                             Idh = a.Idh,
+                             Id = a.Id,
+                             Idc = a.Idc,
+                             Total = a.Total ?? 0,
+                             Date = a.Date,
+                             Name = a.Name,
+                             Phone = a.Phone,
+                             Address = a.Address,
+                             Status = a.Status
+                         }).FirstOrDefault();
+            if (query != null)
+                return true;
+            return false;
+        }
+        public int getIDhoadon(int idc)
+        {
+            var query = (from a in context.Hoadons
+                         where (a.Idc == idc)
+                         select new hoadonVIEW
+                         {
+                             Idh = a.Idh,
+                         }).FirstOrDefault();
+
+            return query.Idh;
+        }
+        public int getTotal(int idh)
+        {
+            var query = (from a in context.Hoadons
+                         join b in context.Chitiethoadons on a.Idh equals b.Idh
+                         where a.Idh == idh
+                         select new hoadonVIEW
+                         {
+                             Idh = a.Idh,
+                             Id = a.Id,
+                             Idc = a.Idc,
+                             Total = (b.Quantity ?? 0) * (b.Price ?? 0),
+                             Date = a.Date,
+                             Name = a.Name,
+                             Phone = a.Phone,
+                             Address = a.Address,
+                             Status = a.Status
+                         }).ToList();
+            return (int)query.Sum(x => x.Total);
+        }
+        public List<hoadonVIEW> History(int idc, out int total, int index = 1, int size = 10)
+        {
+            var query = (from a in context.Hoadons
+                         join b in context.Khachhangs on a.Idc equals b.Idc
+
+                         where b.Idc == idc 
+                         select new hoadonVIEW
+                         {
+                             Idh = a.Idh,
+                             Id = a.Id,
+                             Idc = a.Idc,
+                             Total = a.Total ?? 0,
+                             Date = a.Date,
+                             Name = a.Name,
+                             Phone = a.Phone,
+                             Address = a.Address,
+                             Status = a.Status
+                         }).ToList();
+            total = query.Count();
+            var result = query.Skip((index - 1) * size).Take(size).ToList();
+            return result;
+        }
+
+
 
         public List<int> Doanhthu(int nam)
         {
@@ -116,7 +202,8 @@ namespace OnBuoi1.Models.DAO
                                               Date = a.Date,
                                               Name = a.Name,
                                               Phone = a.Phone,
-                                              Address = a.Address
+                                              Address = a.Address,
+                                              Status = a.Status
                                           }).ToList();
 
                 // Tính tổng doanh thu của tháng và thêm vào danh sách rs

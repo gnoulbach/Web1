@@ -59,6 +59,16 @@ namespace OnBuoi1.Models.EF
                 entity.Property(e => e.Quantity).HasColumnName("quantity");
 
                 entity.Property(e => e.Total).HasColumnName("total");
+
+                entity.HasOne(d => d.IdhNavigation)
+                    .WithMany(p => p.Chitiethoadons)
+                    .HasForeignKey(d => d.Idh)
+                    .HasConstraintName("FK_Chitiethoadon_Hoadon");
+
+                entity.HasOne(d => d.IdpNavigation)
+                    .WithMany(p => p.Chitiethoadons)
+                    .HasForeignKey(d => d.Idp)
+                    .HasConstraintName("FK_Chitiethoadon_Sanpham");
             });
 
             modelBuilder.Entity<Hoadon>(entity =>
@@ -90,7 +100,14 @@ namespace OnBuoi1.Models.EF
                     .HasMaxLength(255)
                     .HasColumnName("phone");
 
+                entity.Property(e => e.Status).HasColumnName("status");
+
                 entity.Property(e => e.Total).HasColumnName("total");
+
+                entity.HasOne(d => d.IdcNavigation)
+                    .WithMany(p => p.Hoadons)
+                    .HasForeignKey(d => d.Idc)
+                    .HasConstraintName("FK_Hoadon_Khachhang");
             });
 
             modelBuilder.Entity<Khachhang>(entity =>
@@ -182,7 +199,7 @@ namespace OnBuoi1.Models.EF
                     .HasColumnName("address");
 
                 entity.Property(e => e.Age)
-                    .HasMaxLength(50)
+                    .HasMaxLength(255)
                     .HasColumnName("age");
 
                 entity.Property(e => e.Name)

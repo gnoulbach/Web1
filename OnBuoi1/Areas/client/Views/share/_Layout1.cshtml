@@ -20,8 +20,6 @@
     <!-- icon -->
     <!-- Google fonts End -->
     <!-- custon style Sheet & JavaScript -->
-
-
     <!-- Custom styles for this template-->
     <link href="~/Assets/Themes2/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -30,7 +28,7 @@
 
 
 
-    
+
 
     <!-- Inline Styles -->
     <style>
@@ -124,11 +122,11 @@
             border-radius: 50%;
         }
 
-        .header-login flex{
+        .header-login flex {
             border-radius: 50%;
         }
 
-        #text_cart{
+        #text_cart {
             background: linear-gradient(40deg,#CC00FF, #FFCC00);
             -webkit-background-clip: text; /* cho trình duyệt Safari */
             -webkit-text-fill-color: transparent; /* cho trình duyệt Safari */
@@ -149,145 +147,145 @@
         <div class="toast-body" id="toast-message">
         </div>
     </div>
-    
-    <header class="primary-header container flex" style="font-size: 200%;">
-   
 
-            <div class="header-inner-one flex">
+    <header class="primary-header container flex" style="font-size: 200%;">
+
+
+        <div class="header-inner-one flex">
             <div class="logo">
                 <a href="/Admin/sanpham/Index">
                     <img src="~/Assets/User/image/logo.png" alt="Logo" />
                 </a>
 
 
-                </div>
-                <button class="mobile-close-btn"
-                        data-visible="false"
-                        aria-controls="primary-navigation">
-                    <i class="uil uil-times-circle"></i>
-                </button>
-                <nav>
-                    <ul id="primary-navigation" 
-                        data-visible="false"
-                        class="primary-navigation flex">
-                        <li>
-                            <a class="active fs-100 fs-montserrat bold-500" href="~/Client/trangchu/index">Home</a>
-                        </li>
-                        <li>
-                            <a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a>
-                        </li>
-                        <li>
-                            <a class="fs-100 fs-montserrat bold-500" href="about.html">About Us</a>
-                        </li>
-                        @*<li>
-                                <a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a>
-                            </li>*@
-                        <li>
-                            <a class="fs-100 fs-montserrat bold-500" href="~/Client/trangchu/Cart">Giỏ hàng</a>
-                        </li>
-                        <li>
-                            <a class="fs-100 fs-montserrat bold-500" href="/Client/trangchu/History">Lịch sử đặt hàng</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
+            <button class="mobile-close-btn"
+                    data-visible="false"
+                    aria-controls="primary-navigation">
+                <i class="uil uil-times-circle"></i>
+            </button>
+            <nav>
+                <ul id="primary-navigation"
+                    data-visible="false"
+                    class="primary-navigation flex">
+                    <li>
+                        <a class="active fs-100 fs-montserrat bold-500" href="~/Client/trangchu/index">Home</a>
+                    </li>
+                    <li>
+                        <a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a class="fs-100 fs-montserrat bold-500" href="about.html">About Us</a>
+                    </li>
+                    @*<li>
+                    <a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a>
+                    </li>*@
+                    <li>
+                        <a class="fs-100 fs-montserrat bold-500" href="~/Client/trangchu/Cart">Giỏ hàng</a>
+                    </li>
+                    <li>
+                        <a class="fs-100 fs-montserrat bold-500" href="/Client/trangchu/History">Lịch sử đặt hàng</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 
-        
-            
-            <input type="text" class="form-control bg-light border-0 small"
-                    style="width: 150px; height: 30px; font-size: 14px;"
-                    placeholder="Search for..." id="search"
-                    aria-label="Search" aria-describedby="basic-addon2">
-                        <i class="uil uil-search" ></i>
-                   
-     
-            <i id="cart-box"
-               aria-controls="cart-icon"
-               class="uil uil-shopping-bag" ></i>
 
-            <!-- =================1111111111================== -->
-            <div id="cart-icon" data-visible="false" class="cart-icon" style="top: 80px ;width:500px;height:400px;">
-                <div class="shopping flex">
-                    <p>Shopping Basket</p>
-                    <i id="cross-btn" class="uil uil-times"></i>
-                </div>
-                <div class="cart bold-800 flex">
+
+        <input type="text" class="form-control bg-light border-0 small"
+               style="width: 150px; height: 30px; font-size: 14px;"
+               placeholder="Search for..." id="search"
+               aria-label="Search" aria-describedby="basic-addon2">
+        <i class="uil uil-search"></i>
+
+
+        <i id="cart-box"
+           aria-controls="cart-icon"
+           class="uil uil-shopping-bag"></i>
+
+        <!-- =================1111111111================== -->
+        <div id="cart-icon" data-visible="false" class="cart-icon" style="top: 80px ;width:500px;height:400px;">
+            <div class="shopping flex">
+                <p>Shopping Basket</p>
+                <i id="cross-btn" class="uil uil-times"></i>
+            </div>
+            <div class="cart bold-800 flex">
                 <i id="text_cart" class="uil uil-shopping-cart-alt"></i>
                 <p id="text_cart">Cart Is Empty</p>
 
-                    <!-- ================================================== -->
-                    <!-- ================================================== -->
-                </div>
+                <!-- ================================================== -->
+                <!-- ================================================== -->
             </div>
+        </div>
         <div class="header-login flex" style="border-radius: 50%;">
-
+            @Html.Raw(ViewBag.Login)
             @*<p class="fs-100 fs-montserrat bold-500"><a href="/Client/trangchu/Login">Login</a></p>*@
             <div id="log" style="border-radius: 50%;">
                 <!-- Sử dụng biểu tượng đăng xuất của Font Awesome -->
                 <i class="fa-solid fa-right-to-bracket"></i>
             </div>
         </div>
-            <div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
-        </header>
-        <div>
+        <div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
+    </header>
+    <div>
 
-            @RenderBody()
-        </div>
+        @RenderBody()
+    </div>
 
-        <footer>
-            <!-- =============Brands================= -->
-            <section class="brands grid">
-                <div>
-                    <img src="~/Assets/User/image/br-1.png" />
+    <footer>
+        <!-- =============Brands================= -->
+        <section class="brands grid">
+            <div>
+                <img src="~/Assets/User/image/br-1.png" />
 
-                </div>
-                <div>
-                    <img src="~/Assets/User/image/br-2.png" alt="" />
-                </div>
-                <div>
-                    <img src="~/Assets/User/image/br-3.png" alt="" />
-                </div>
-                <div>
-                    <img src="~/Assets/User/image/br-4.png" alt="" />
-                </div>
-                <div>
-                    <img src="~/Assets/User/image/br-5.png" alt="" />
-                </div>
-            </section>
+            </div>
+            <div>
+                <img src="~/Assets/User/image/br-2.png" alt="" />
+            </div>
+            <div>
+                <img src="~/Assets/User/image/br-3.png" alt="" />
+            </div>
+            <div>
+                <img src="~/Assets/User/image/br-4.png" alt="" />
+            </div>
+            <div>
+                <img src="~/Assets/User/image/br-5.png" alt="" />
+            </div>
+        </section>
 
-            <!-- =============Footer Menu=================== -->
-            <section class="footer grid">
-                <div class="footer-logo grid">
-                    <img src="~/Assets/User/image/logo.png" alt="" />
-                    <p class="fs-montserrat fs-200">
-                        There are many variations passages of Lorem Ipsum available, but the
-                        majority have
-                    </p>
-                   
-                    </div>
-                
+        <!-- =============Footer Menu=================== -->
+        <section class="footer grid">
+            <div class="footer-logo grid">
+                <img src="~/Assets/User/image/logo.png" alt="" />
+                <p class="fs-montserrat fs-200">
+                    There are many variations passages of Lorem Ipsum available, but the
+                    majority have
+                </p>
 
-                <div class="footer-menu grid">
-                    <h3 class="fs-poppins fs-200 bold-800">Quick Links</h3>
-                    <ul>
-                        <li>
-                            <a class="fs-montserrat text-black fs-200" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="fs-montserrat text-black fs-200" href="#">About</a>
-                        </li>
-                        <li>
-                            <a class="fs-montserrat text-black fs-200" href="#">Shop</a>
-                        </li>
-                        <li>
-                            <a class="fs-montserrat text-black fs-200" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
 
-                <div class="contact grid">
-                    <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+
+            <div class="footer-menu grid">
+                <h3 class="fs-poppins fs-200 bold-800">Quick Links</h3>
+                <ul>
+                    <li>
+                        <a class="fs-montserrat text-black fs-200" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="fs-montserrat text-black fs-200" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="fs-montserrat text-black fs-200" href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a class="fs-montserrat text-black fs-200" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact grid">
+                <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
                 <div class="social-media flex">
                     <a href="https://www.facebook.com/bach.luong.1044186">
                         <i class="uil uil-facebook-f"></i>
@@ -305,34 +303,34 @@
                         <i class="uil uil-twitter"></i>
                     </a>
                 </div>
-                </div>
+            </div>
 
-                <div class="emails grid">
-                    <h3 class="fs-poppins fs-200 bold-800">Subscribe To Our Email</h3>
-                    <p class="updates fs-poppins fs-300 bold-800">
-                        For Latest News & Updates
-                    </p>
-                    <div class="inputField flex bg-gray">
-                        <input type="email"
-                               placeholder="Enter Your Email"
-                               class="fs-montserrat bg-gray" />
-                        <button class="bg-red text-white fs-poppins fs-50">
-                            Subscribe
-                        </button>
-                    </div>
+            <div class="emails grid">
+                <h3 class="fs-poppins fs-200 bold-800">Subscribe To Our Email</h3>
+                <p class="updates fs-poppins fs-300 bold-800">
+                    For Latest News & Updates
+                </p>
+                <div class="inputField flex bg-gray">
+                    <input type="email"
+                           placeholder="Enter Your Email"
+                           class="fs-montserrat bg-gray" />
+                    <button class="bg-red text-white fs-poppins fs-50">
+                        Subscribe
+                    </button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="copyRight">
-                <p class="c-font fs-montserrat fs-200">
-                    © 2023 eStore. All rights reserved.
-                </p>
-                <p class="fs-montserrat fs-100 text-align p-top">
-                    Privacy Policy . Term Condition
-                </p>
-            </section>
-        </footer>
-    
+        <section class="copyRight">
+            <p class="c-font fs-montserrat fs-200">
+                © 2023 eStore. All rights reserved.
+            </p>
+            <p class="fs-montserrat fs-100 text-align p-top">
+                Privacy Policy . Term Condition
+            </p>
+        </section>
+    </footer>
+
     <script src="~/Assets/User/js/index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -353,22 +351,39 @@
     <script>
         var log = {
             init: function () {
-                log.login();
+                //log.login();
+                log.loadLoginStatus();
             },
-            login: function () {
+            //login: function () {
+            //    $.ajax({
+            //        type: 'get',
+            //        dataType: 'Json',
+            //        contentType: false,
+            //        processData: false,
+
+            //        url: '/Client/trangchu/CheckLogin/',
+            //        success: function (res) {
+            //            $("#log").html(res.data);
+
+            //        },
+            //    });
+            //},
+            loadLoginStatus: function () {
                 $.ajax({
                     type: 'get',
                     dataType: 'Json',
                     contentType: false,
                     processData: false,
+                    url: '/client/Trangchu/CheckLoginStatus',
 
-                    url: '/Client/trangchu/CheckLogin/',
-                    success: function (res) {
-                        $("#log").html(res.data);
-
+                    success: function (result) {
+                        //$("#ten").text(result.data.name);
                     },
+                    error: function (error) {
+                        console.log(error);
+                    }
                 });
-            },
+            }
         }
         log.init();
     </script>

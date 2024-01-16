@@ -36,9 +36,9 @@ namespace OnBuoi1.Models.DAO
                                  Idp = a.Idp,
                                  Name = b.Name,
                                  Idh = a.Idh,
-                                 Price = a.Price,
+                                 Price = b.Price,
                                  Quantity = a.Quantity,
-                                 Total = a.Price * a.Quantity
+                                 Total = b.Price * a.Quantity
                              }).FirstOrDefault();
                 return query;
             }
@@ -54,9 +54,9 @@ namespace OnBuoi1.Models.DAO
                                  Idp = a.Idp,
                                  Name = b.Name,
                                  Idh = a.Idh,
-                                 Price = a.Price,
+                                 Price = b.Price,
 
-                                 Total = a.Price * a.Quantity
+                                 Total = b.Price * a.Quantity
                              }).FirstOrDefault();
                 return query;
             }
@@ -70,9 +70,9 @@ namespace OnBuoi1.Models.DAO
                                  Idp = a.Idp,
                                  Name = b.Name,
                                  Idh = a.Idh,
-                                 Price = a.Price,
+                                 Price = b.Price,
                                  Quantity = a.Quantity,
-                                 Total = a.Price * a.Quantity
+                                 Total = b.Price * a.Quantity
                              }).ToList();
                 return query;
             }
@@ -87,9 +87,9 @@ namespace OnBuoi1.Models.DAO
                                  Idp = a.Idp,
                                  Name = b.Name,
                                  Idh = a.Idh,
-                                 Price = a.Price,
+                                 Price = b.Price,
                                  Quantity = a.Quantity,
-                                 Total = a.Price * a.Quantity
+                                 Total = b.Price * a.Quantity
                              }).ToList();
 
 
@@ -133,9 +133,9 @@ namespace OnBuoi1.Models.DAO
                                  Idp = a.Idp,
                                  Name = b.Name,
                                  Idh = a.Idh,
-                                 Price = a.Price,
+                                 Price = b.Price,
                                  Quantity = a.Quantity,
-                                 Total = a.Price * a.Quantity,
+                                 Total = b.Price * a.Quantity,
                                  Image = b.Image
                              }).ToList();
                 return query;
