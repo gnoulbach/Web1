@@ -1,5 +1,6 @@
 ﻿using OnBuoi1.Models.EF;
 using OnBuoi1.Models.VIEW;
+using System.Xml.Linq;
 
 
 namespace OnBuoi1.Models.DAO
@@ -137,6 +138,20 @@ namespace OnBuoi1.Models.DAO
 
                          }).FirstOrDefault();
             return query;
+        }
+
+        public int doi (String username)
+        {
+            var query = (from a in context.Khachhangs
+                         where a.Username == username
+                         select new khachhangVIEW
+                         {
+                             Idc = a.Idc,
+                             Name = a.Name,
+
+                         }).FirstOrDefault();
+            if  (query == null) return 0;
+            return query.Idc;
         }
     }
 }

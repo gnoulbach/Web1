@@ -14,7 +14,7 @@ namespace OnBuoi1.Areas.admin.Controllers
         public IActionResult Index()
         {
             List<Lopchung> pagesize = new List<Lopchung>();
-            pagesize.Add(new Lopchung { ID = 7 });
+            pagesize.Add(new Lopchung { ID = 3 });
             pagesize.Add(new Lopchung { ID = 10 });
             pagesize.Add(new Lopchung { ID = 20 });
             pagesize.Add(new Lopchung { ID = 30 });
@@ -49,7 +49,7 @@ namespace OnBuoi1.Areas.admin.Controllers
             sanpham.InsertOrUpdate(item);
             return Json(new { mess = "Chinh sua san pham thanh cong" });
         }
-        public JsonResult ShowList(string name = "", int index = 1, int size = 7)
+        public JsonResult ShowList(string name = "", int index = 1, int size = 3)
         {
 
             sanphamDAO sanpham = new sanphamDAO();

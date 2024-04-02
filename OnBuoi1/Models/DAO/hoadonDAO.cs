@@ -66,11 +66,18 @@ namespace OnBuoi1.Models.DAO
         public List<hoadonVIEW> Search(out int totalp, string name = "", int index = 1, int size = 7)
         {
             var query = context.Hoadons.AsQueryable();
+
+            // Filter by name if provided
             if (!string.IsNullOrEmpty(name))
             {
                 query = query.Where(a => a.Name.Contains(name));
             }
+
+            // Filter by Status = 2
+            query = query.Where(a => a.Status == 2);  // Add this line for the condition
+
             totalp = query.Count();
+
             var result = query
                 .Select(a => new hoadonVIEW
                 {
@@ -87,8 +94,10 @@ namespace OnBuoi1.Models.DAO
                 .Skip((index - 1) * size)
                 .Take(size)
                 .ToList();
+
             return result;
         }
+
 
 
 
@@ -190,9 +199,9 @@ namespace OnBuoi1.Models.DAO
                 DateTime start = DateServices.GetFirstDayOfMonth(i, nam);
                 DateTime end = DateServices.GetLastDayOfMonth(i, nam);
 
-                // Lấy danh sách hóa đơn trong khoảng thời gian của tháng hiện tại
+                // Filter invoices with status 2 within the current month
                 List<hoadonVIEW> query = (from a in context.Hoadons
-                                          where a.Date >= start && a.Date <= end
+                                          where a.Date >= start && a.Date <= end && a.Status == 2 // Added status filter
                                           select new hoadonVIEW
                                           {
                                               Idh = a.Idh,
@@ -206,13 +215,14 @@ namespace OnBuoi1.Models.DAO
                                               Status = a.Status
                                           }).ToList();
 
-                // Tính tổng doanh thu của tháng và thêm vào danh sách rs
+                // Calculate and add monthly revenue to the list
                 int doanhThuThang = (int)query.Sum(item => item.Total);
                 rs.Add(doanhThuThang);
             }
 
             return rs;
         }
+
 
     }
 }

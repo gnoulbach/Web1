@@ -19,19 +19,55 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .carousel-inner {
-            margin-bottom: 20px;
-            margin-top: 20px;
+        .carousel {
+            margin-bottom: 30px;
+            border-radius: 10px; /* Rounded corners for a softer look */
+            overflow: hidden; /* Ensures content stays within the carousel area */
         }
 
+        .carousel-inner {
+            height: 250px; /* Set a fixed height for slides */
+        }
+
+        .carousel-img {
+            width: 100%; /* Ensures images fill the slide container */
+            height: 100%; /* Ensures images fill the slide container vertically */
+            object-fit: cover; /* Scales images to fill the container while maintaining aspect ratio */
+        }
+
+        /* Styling for left carousel (main) */
+        #myCarousel {
+            max-width: 900px;
+        }
+
+        /* Styling for right carousel (smaller) */
+        #rightCarousel {
+            max-width: 500px;
+        }
+
+        /* Remove hover effect for cleaner look */
+        .carousel:hover .carousel-control {
+            opacity: 1;
+        }
+
+        /* Add custom arrows */
         .carousel-control {
             opacity: 0;
             transition: opacity 0.5s;
         }
 
-        .carousel:hover .carousel-control {
-            opacity: 1;
-        }
+            .carousel-control.left,
+            .carousel-control.right {
+                opacity: 1; /* Always visible arrows */
+            }
+
+           
+
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .glyphicon-chevron-right {
+                font-size: 36px; /* Adjust arrow size as needed */
+                line-height: 36px; /* Center arrows vertically */
+            }
     </style>
 </head>
 <body>
@@ -198,7 +234,7 @@
     }
 
     #edit_quantity {
-        color: #FFFFFF; /* Chữ màu trắng */
+        color: #CC0000; /* Chữ màu trắng */
         font-size: 16px; /* Chữ vừa */
     }
 
@@ -214,9 +250,6 @@
         color: #888888;
         font-size: 14px;
     }
-
-
-
 
 </style>
 
@@ -285,17 +318,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

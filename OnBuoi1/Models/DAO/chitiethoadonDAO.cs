@@ -38,7 +38,7 @@ namespace OnBuoi1.Models.DAO
                                  Idh = a.Idh,
                                  Price = b.Price,
                                  Quantity = a.Quantity,
-                                 Total = b.Price * a.Quantity
+                                 Total = a.Price * a.Quantity
                              }).FirstOrDefault();
                 return query;
             }
@@ -55,8 +55,7 @@ namespace OnBuoi1.Models.DAO
                                  Name = b.Name,
                                  Idh = a.Idh,
                                  Price = b.Price,
-
-                                 Total = b.Price * a.Quantity
+                                 Total =   b.Price * a.Quantity
                              }).FirstOrDefault();
                 return query;
             }
@@ -149,7 +148,7 @@ namespace OnBuoi1.Models.DAO
                              join b in context.Sanphams on a.Idp equals b.Idp
                              join c in context.Hoadons on a.Idh equals c.Idh
                              where c.Date >= start && c.Date <= end
-                             group new { a, b } by new { a.Idp, b.Name, a.Idh, a.Price, b.Image} into grouped
+                             group new { a, b } by new { a.Idp, b.Name, a.Idh, b.Price, b.Image} into grouped
                              select new chitiethoadonVIEW
                              {
                                  Idct = grouped.FirstOrDefault().a.Idct,

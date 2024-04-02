@@ -134,6 +134,116 @@
             color: transparent;
         }
     </style>
+    <style>
+        /* Overall header styling */
+        .primary-header {
+            display: flex; /* Allow for horizontal layout */
+            justify-content: space-between; /* Distribute elements evenly */
+            align-items: center; /* Vertically align content */
+            padding: 1rem 2rem; /* Add some padding for breathing room */
+            background-color: #fff; /* Light background color */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            font-size: 1rem; /* Set base font size */
+        }
+
+        .container {
+            max-width: 1140px; /* Limit container width for responsiveness */
+            margin: 0 auto; /* Center the header horizontally */
+        }
+
+        /* Header content sections */
+        .header-inner-one,
+        .header-login {
+            display: flex; /* Allow for horizontal layout within sections */
+            align-items: center; /* Vertically align content within sections */
+        }
+
+        /* Logo styling */
+        .logo {
+            margin-right: 2rem; /* Add some space after the logo */
+        }
+
+            .logo img {
+                max-height: 50px; /* Set a maximum height for the logo image */
+            }
+
+        /* Navigation styling */
+        nav {
+            flex: 1; /* Allow navigation to take up remaining space */
+        }
+
+        #primary-navigation {
+            list-style: none; /* Remove default bullet points */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Arrange navigation items horizontally */
+        }
+
+            #primary-navigation li {
+                margin-right: 1rem; /* Add some space between navigation items */
+            }
+
+            #primary-navigation a {
+                text-decoration: none; /* Remove underline from links */
+                color: #333; /* Darker text color for better contrast */
+                padding: 0.5rem 1rem; /* Add some padding for clickability */
+                transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+            }
+
+                #primary-navigation a:hover {
+                    color: #007bff; /* Blue highlight on hover */
+                }
+
+        /* Search bar styling */
+        .form-control {
+            border: 1px solid #ccc; /* Add a border for better visibility */
+            border-radius: 4px; /* Rounded corners for a modern look */
+            padding: 0.5rem 1rem;
+            box-sizing: border-box; /* Include padding in width calculation */
+            margin-left: 1rem; /* Add some space after navigation */
+        }
+
+        /* Shopping cart icon styling */
+        #cart-box {
+            cursor: pointer; /* Indicate clickability */
+            margin-left: 1rem; /* Add some space after search bar */
+            transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+        }
+
+            #cart-box:hover {
+                color: #007bff; /* Blue highlight on hover */
+            }
+
+        /* Shopping cart dropdown styling */
+        .cart-icon {
+            position: absolute; /* Position the dropdown absolutely */
+            top: 100%; /* Position the dropdown below the icon */
+            left: 0; /* Align the dropdown to the left */
+            background-color: #fff; /* White background color */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            padding: 1rem; /* Add some padding for content */
+            display: none; /* Hide the dropdown initially */
+        }
+
+        #cart-icon:hover .cart-icon,
+        #cart-icon.active .cart-icon { /* Show the dropdown on hover or active state */
+            display: block;
+        }
+
+        .shopping {
+            display: flex;
+            justify-content: space-between; /* Distribute shopping cart title and close button */
+            margin-bottom: 1rem; /* Add some space below the title */
+        }
+
+            .shopping p {
+                font-weight: bold; /* Bold text for title */
+            }
+
+        #cross-btn {
+            cursor: pointer; /* Indicate clickability for close button */
+            color: #ccc; /* Gray color for close button */
+    </style>
 </head>
 <body class="home">
     <div class="toast" id="toastf" role="alert" data-delay="3000" aria-live="assertive" aria-atomic="true" style="position:absolute;top:60px;right:0;z-index:999999">
@@ -174,18 +284,18 @@
                     <li>
                         <a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a>
                     </li>
-                    <li>
+                    @*<li>
                         <a class="fs-100 fs-montserrat bold-500" href="about.html">About Us</a>
                     </li>
-                    @*<li>
+                    <li>
                     <a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a>
                     </li>*@
                     <li>
                         <a class="fs-100 fs-montserrat bold-500" href="~/Client/trangchu/Cart">Giỏ hàng</a>
                     </li>
-                    <li>
-                        <a class="fs-100 fs-montserrat bold-500" href="/Client/trangchu/History">Lịch sử đặt hàng</a>
-                    </li>
+                    @*<li>
+                        <a class="fs-100 fs-montserrat bold-500" href="/Client/trangchu/History">Lịch Sử</a>
+                    </li>*@
                 </ul>
             </nav>
         </div>
@@ -200,7 +310,7 @@
         <i class="uil uil-search"></i>
 
 
-        <i id="cart-box"
+        @*<i id="cart-box"
            aria-controls="cart-icon"
            class="uil uil-shopping-bag"></i>
 
@@ -217,7 +327,7 @@
                 <!-- ================================================== -->
                 <!-- ================================================== -->
             </div>
-        </div>
+        </div>*@
         <div class="header-login flex" style="border-radius: 50%;">
             @Html.Raw(ViewBag.Login)
             @*<p class="fs-100 fs-montserrat bold-500"><a href="/Client/trangchu/Login">Login</a></p>*@
@@ -227,6 +337,7 @@
             </div>
         </div>
         <div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
+
     </header>
     <div>
 
@@ -346,8 +457,8 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/Assets/Themes2/js/sb-admin-2.min.js"></script>
-    <script src="~/Scripts/admin/_layout.js"></script>
-
+    @*<script src="~/Scripts/admin/_layout.js"></script>*@
+    <script src="~/admin/_layout.js"></script>
     <script>
         var log = {
             init: function () {
@@ -388,9 +499,11 @@
         log.init();
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     @RenderSection("scripts", required: false)
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
 
+    
 </body>
 </html>

@@ -165,7 +165,20 @@
                 })
 
             },
-
+            delete: function (id) {
+                if (confirm("Bạn có muốn xóa hay không?")) {
+                    //Hanfh ddoonjg gọi action xóa
+                    $.ajax({
+                        type: 'get',
+                        dataType: 'JSON',
+                        url: '/Admin/Hoadon/Delete/' + id,
+                        success: function (res) {
+                            alert(res.mess);
+                            hoadon.search(1);
+                        }
+                    });
+                }
+            },
             search: function (index) {
                 var status = $("#status").val();
                 var size = $("#Pagesize").val();

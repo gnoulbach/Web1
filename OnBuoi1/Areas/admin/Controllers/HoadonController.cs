@@ -57,12 +57,20 @@ namespace OnBuoi1.Areas.admin.Controllers
 
                 text += "<td>" +
                     "<a href='javacript:void(0)' onclick='hoadon.xemchitiet(" + item.Idh + ")' data-toggle='modal' data-target='#xemchitiet' data-whatever='" + item.Idh + "' ><i class='fas fa-eye'></i></a></td>";
-                text += "<td> <a href='/Admin/hoadon/Edit/" + item.Idh + "'><i class='fa fa-edit' aria-hidden='true'></i></a>";
-                text += " <a href='/Admin/hoadon/Delete/" + item.Idh + "'><i class='fa fa-trash' aria-hidden='true'></i> </a></td>";
+                text += " <td>" + "<a href = 'javacript:void(0)'  onclick='hoadon.delete(" + item.Idh + ")' ><i class='fa fa-trash'></i></a>" + "</td>";
+                //text += "<td> <a href='/Admin/hoadon/Edit/" + item.Idh + "'><i class='fa fa-edit' aria-hidden='true'></i></a>";
+                //text += " <a href='/Admin/hoadon/Delete/" + item.Idh + "'><i class='fa fa-trash' aria-hidden='true'></i> </a></td>";
                 text += "</tr>";
             }
             string page = Support.InTrang(totalh, index, size);
             return Json(new { data = text, page = page });
+        }
+        public JsonResult Delete(int id)
+        {
+            hoadonDAO x = new hoadonDAO();
+            x.Detele(id);
+            return Json(new { mess = "Xoa hoa don thanh cong" });
+
         }
         public ActionResult Edit(int? idh)
         {
